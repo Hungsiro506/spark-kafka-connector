@@ -12,7 +12,7 @@ class ConnLogParser extends AbtractLogParser {
   private val c_ssThreadId          =   AtomicPattern.ssThreadId
   private val c_contask             =   AtomicPattern.conTask
   private val c_content             =   AtomicPattern.content
-  private val c_NASName             =   AtomicPattern.NASName
+  private val c_nASName             =   AtomicPattern.nASName
   private val c_undefinedText       =   AtomicPattern.unindentified
   private val c_rejectCause         =   AtomicPattern.rejectCause
   private val c_rejectResultDetail  =   AtomicPattern.rejectResultDetail
@@ -23,8 +23,8 @@ class ConnLogParser extends AbtractLogParser {
 
   def extractValues(line: String): Option[AbtractLogLine]={
     line match {
-      case signInLogOffPattern(c_time2,c_ssThreadId,c_contask,c_conName,c_NASName,c_undefinedText)
-        => return Option(ConnLogLineObject(c_time2,c_ssThreadId,c_contask,c_conName,c_NASName,c_undefinedText))
+      case signInLogOffPattern(c_time2,c_ssThreadId,c_contask,c_conName,c_nASName,c_undefinedText)
+        => return Option(ConnLogLineObject(c_time2,c_ssThreadId,c_contask,c_conName,c_nASName,c_undefinedText))
 
       case rejectPattern(c_time2,c_ssThreadId,c_contask,c_conName,c_rejectCause,c_rejectResultDetail)
         => return Option(ConnLogLineObject(c_time2,c_ssThreadId,c_contask,c_conName,c_rejectCause,c_rejectResultDetail))

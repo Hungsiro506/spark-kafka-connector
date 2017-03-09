@@ -12,9 +12,10 @@ object AtomicPattern {
     val ssThreadId            = "(\\w{8,}|\\w+[.]\\w+[.]?\\w+)"
     val unindentified         = "(\\w{4,})"
     val sessID                = "([^\"]+)"
-    val conTask               = "(\\D{4,}):(\\D{6,}):"
+    //val conTask               = "(\\D{4,}):(\\D{6,}):"
+    val conTask               = "(\\D{4,}:\\D{6,}):"
     private val status        = "([a-zA-Z]{6,})"
-    val NASName               = "([a-zA-Z]{2,}\\d{1,}|\\w{1,}-\\w{1,}-\\w{1,}|\\w{1,}-\\w{1,}|\\w{1,}-\\w{1,}-\\w{1,}-\\w{1,})"
+    val nASName               = "([a-zA-Z]{2,}\\d{1,}|\\w{1,}-\\w{1,}-\\w{1,}|\\w{1,}-\\w{1,}|\\w{1,}-\\w{1,}-\\w{1,}-\\w{1,})"
     private val realNumber    = "(-?\\d{1,})"
     private val ip            = "(\\d{1,}[.]\\d{1,}[.]\\d{1,}[.]\\d{1,})"
     private val mac           = "(\\w{2}:\\w{2}:\\w{2}:\\w{2}:\\w{2}:\\w{2})"
@@ -43,8 +44,8 @@ object AtomicPattern {
   private var conRes = Map(
         "Content"           -> text,
         "LForce"            -> (conName + ", " + text),
-        "SignIn"            -> (conName + ", " + NASName + ", " + unindentified),
-        "LogOff"            -> (conName + ", " + NASName + ", " + unindentified),
+        "SignIn"            -> (conName + ", " + nASName + ", " + unindentified),
+        "LogOff"            -> (conName + ", " + nASName + ", " + unindentified),
         "Reject"            -> (conName + ", " + rejectCause + ", " + rejectResultDetail),
         "Silent Discard"    -> ("[[]" + conName + ", " + mac + "[]]"),
         "Invalid Radius Packet from"-> (ip + text)
@@ -71,7 +72,7 @@ object AtomicPattern {
     return "\"" +string+ "\""
   }
    val time1WithQuote = addQuote(time1)
-   val NASNameWithQuote = addQuote(NASName)
+   val nASNameWithQuote = addQuote(nASName)
    val realNumberWithQuote = addQuote(realNumber)
    val conNameWithQuote  = addQuote(conName)
    val sessIDWithQuote  =  addQuote(sessID)
@@ -84,7 +85,7 @@ object AtomicPattern {
   // Shoud not put this thing here, put in specific parser.
   // pattern without Quote sign
    // old devide doesn't hvae status
-  val loadPattern = addQuote(time1)+comma+addQuote(NASName)+comma+addQuote(realNumber)+comma+addQuote(conName)+
+  val loadPattern = addQuote(time1)+comma+addQuote(nASName)+comma+addQuote(realNumber)+comma+addQuote(conName)+
   comma+addQuote(sessID)+comma+addQuote(realNumber)+comma+addQuote(realNumber)+comma+addQuote(realNumber)+comma+
     addQuote(realNumber)+comma+addQuote(ip)+comma+addQuote(mac)+comma+addQuote(text)
   // new devide has one more field status.
@@ -94,11 +95,11 @@ object AtomicPattern {
   ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
   // Patterns with Quote sign
-  val loadRegexPattern: Regex   = s"$time1WithQuote,$NASNameWithQuote,$realNumberWithQuote,$conNameWithQuote,$sessIDWithQuote,$realNumberWithQuote,$realNumberWithQuote,$realNumberWithQuote,$realNumberWithQuote,$ipWithQuote,$macWithQuote,$textWithQuote".r
+  val loadRegexPattern: Regex   = s"$time1WithQuote,$nASNameWithQuote,$realNumberWithQuote,$conNameWithQuote,$sessIDWithQuote,$realNumberWithQuote,$realNumberWithQuote,$realNumberWithQuote,$realNumberWithQuote,$ipWithQuote,$macWithQuote,$textWithQuote".r
   val loadStatusRegexPattern: Regex   = new Regex(s"$statusWithQuote" +","+ s"$loadRegexPattern")
   val conRegexPattern: Regex =   s"$time2\\s+$ssThreadId\\s+$conTask\\s+$content".r
 
-  val signInLogOffRegexPattern: Regex = s"$time2\\s+$ssThreadId\\s+$conTask\\s+$conName,\\s+$NASName,\\s+$text".r
+  val signInLogOffRegexPattern: Regex = s"$time2\\s+$ssThreadId\\s+$conTask\\s+$conName,\\s+$nASName,\\s+$text".r
   val rejectRegexPattern: Regex       = s"$time2\\s+$ssThreadId\\s+$conTask\\s+$conName,\\s+$rejectCause,\\s+$rejectResultDetail".r
 
   //Define head and tail of load - conn log for classifier

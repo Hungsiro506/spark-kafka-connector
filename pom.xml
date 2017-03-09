@@ -86,7 +86,7 @@
         </dependency>
 
         <dependency>
-            <groupId>kafka.spark.consumer</groupId>
+            <groupId>dibbhatt</groupId>
             <artifactId>kafka-spark-consumer</artifactId>
             <version>1.0.10</version>
         </dependency>

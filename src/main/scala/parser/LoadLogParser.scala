@@ -10,8 +10,8 @@ class LoadLogParser extends AbtractLogParser{
 
 
     private val time1WithQuote      =   AtomicPattern.time1WithQuote
-    private val NASNameWithQuote    =   AtomicPattern.NASNameWithQuote
-    private val NASPortWithQuote    =   AtomicPattern.realNumberWithQuote
+    private val l_nASNameWithQuote  =   AtomicPattern.nASNameWithQuote        // WARNING : dont name variable with an upcase in begining
+    private val l_nASPortWithQuote  =   AtomicPattern.realNumberWithQuote
     private val conNameWithQuote    =   AtomicPattern.conNameWithQuote
     private val sessIDWithQuote     =   AtomicPattern.sessIDWithQuote
     private val ipWithQuote         =   AtomicPattern.ipWithQuote
@@ -42,14 +42,14 @@ class LoadLogParser extends AbtractLogParser{
       */
     def extractValues(line: String): Option[AbtractLogLine]={
         line match {
-            case loadRegexPattern(time1WithQuote,NASNameWithQuote,NASPortWithQuote,conNameWithQuote,sessIDWithQuote,
+            case loadRegexPattern(time1WithQuote,l_nASNameWithQuote,l_nASPortWithQuote,conNameWithQuote,sessIDWithQuote,
             input,output,termcode,sessionTime,ipWithQuote,macWithQuote,text)
-                => return Option(LoadLogLineObject("",time1WithQuote,NASNameWithQuote,NASPortWithQuote,conNameWithQuote,sessIDWithQuote,
+                => return Option(LoadLogLineObject("",time1WithQuote,l_nASNameWithQuote,l_nASPortWithQuote,conNameWithQuote,sessIDWithQuote,
                 input,output,termcode,sessionTime,ipWithQuote,macWithQuote,text))
 
-            case loadStatusRegexPattern(statusWithQuote,time1WithQuote,NASNameWithQuote,NASPortWithQuote,conNameWithQuote,sessIDWithQuote,
+            case loadStatusRegexPattern(statusWithQuote,time1WithQuote,l_nASNameWithQuote,l_nASPortWithQuote,conNameWithQuote,sessIDWithQuote,
             input,output,termcode,sessionTime,ipWithQuote,macWithQuote,text)
-                => return Option(LoadLogLineObject(statusWithQuote,time1WithQuote,NASNameWithQuote,NASPortWithQuote,conNameWithQuote,sessIDWithQuote,
+                => return Option(LoadLogLineObject(statusWithQuote,time1WithQuote,l_nASNameWithQuote,l_nASPortWithQuote,conNameWithQuote,sessIDWithQuote,
                 input,output,termcode,sessionTime,ipWithQuote,macWithQuote,text))
 
             case _ => Some(ErroLogLine(line))

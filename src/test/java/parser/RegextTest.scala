@@ -106,8 +106,8 @@ object RegextTest {
 
     val regex  = s"$pattern".r
     log match{
-      case regex(pattern) => println("True - NASName")
-      case _ => println(("False - NASName"))
+      case regex(pattern) => println("True - nASName")
+      case _ => println(("False - nASName"))
     }*/
 
 
@@ -149,9 +149,10 @@ object RegextTest {
     val ssThreadId            = "(\\w{8,}|\\w+[.]\\w+[.]?\\w+)"
     val unindentified         = "(\\w{4,})"
     val sessID                = "([^\"]+)"
-    val conTask               = "(\\D{4,}):(\\D{6,}):"
+    //val connTask               = "(\\D{4,}):(\\D{6,}):"
+    val connTask               = "(\\D{4,}:\\D{6,}):"
      val status        = "([a-zA-Z]{6,})"
-    val NASName               = "([a-zA-Z]{2,}\\d{1,}|\\w{1,}-\\w{1,}-\\w{1,}|\\w{1,}-\\w{1,}|\\w{1,}-\\w{1,}-\\w{1,}-\\w{1,})"
+    val nASName               = "([a-zA-Z]{2,}\\d{1,}|\\w{1,}-\\w{1,}-\\w{1,}|\\w{1,}-\\w{1,}|\\w{1,}-\\w{1,}-\\w{1,}-\\w{1,})"
      val realNumber    = "(-?\\d{1,})"
      val ip            = "(\\d{1,}[.]\\d{1,}[.]\\d{1,}[.]\\d{1,})"
      val mac           = "(\\w{2}:\\w{2}:\\w{2}:\\w{2}:\\w{2}:\\w{2})"
@@ -176,7 +177,7 @@ object RegextTest {
       return "\"" +string+ "\""
     }
     val time1WithQuote = addQuote(time1)
-    val NASNameWithQuote = addQuote(NASName)
+    val nASNameWithQuote = addQuote(nASName)
     val realNumberWithQuote = addQuote(realNumber)
     val conNameWithQuote  = addQuote(conName)
     val sessIDWithQuote  =  addQuote(sessID)
@@ -200,7 +201,7 @@ object RegextTest {
 
     val statusRegex = s"$statusWithQuote".r
     val time1Regex  = s"$time1WithQuote".r
-    val NASNameRegex  = s"$NASNameWithQuote".r
+    val NASNameRegex  = s"$nASNameWithQuote".r
     val realNumberRegex =s"$realNumberWithQuote".r
     val conNameRegex  = s"$conNameWithQuote".r
     val sessIDRegex   = s"$sessIDWithQuote".r
@@ -221,8 +222,8 @@ object RegextTest {
     }
 
     NASNameExample match{
-      case NASNameRegex(NASNameWithQuote) => println("true NASNameWithQuote")
-      case _ => println("false NASNameWithQuote")
+      case NASNameRegex(nASNameWithQuote) => println("true nASNameWithQuote")
+      case _ => println("false nASNameWithQuote")
     }
 
     realNumberExample match{
@@ -239,37 +240,79 @@ object RegextTest {
       case _ => println("false nullTextExample")
     }
 
+     val time2Regext = s"$time2".r
+     val threadRegext = s"$ssThreadId".r
+     val conntaskRegext = s"$connTask".r
+     val conNameRegext = conName.r
+     val textRegext  = text.r
+     val nASNameRegex = nASName.r
 
+    val time2LogExample = "06:59:59"
+    val threadLogExample = "0000159C"
+    val contaskLogExample = "Auth-Local:SignIn:"
+    val conNameLogExample = "Kgdsl-130727-700"
+    val nAsNameLogExample = "KGG-MP01-1"
+    val textLogExample    = "64AFA38A"
 
-
- /*   def buildLogObject(matcher: Matcher) = {
-      LogObject(
-        matcher.group(1),
-        matcher.group(2)
-      )
+    time2LogExample match{
+      case time2Regext(time2) => println("true time2")
+      case _ => println("false time2")
     }
-    def parseRecord(record: String): Option[LogObject]={
-      val regex = s"$dateTimePattern,$nasNamePattern".r
-      // JAVA Style
-      val javaRegex = Pattern.compile(regex.toString())
-      val matcher = javaRegex.matcher(test)
-      if(matcher.find()) {
-        Some(buildLogObject(matcher))
-      }else {
-        None
-      }
+    threadLogExample match{
+      case threadRegext(ssThreadId) => println("true ssThreadId")
+      case _ => println("false ssThreadId")
     }
-    def parseRecordReturningNullObjectOnFailure(record: String): LogObject={
-      val regex = s"$dateTimePattern,$nasNamePattern".r
-      // JAVA Style
-      val javaRegex = Pattern.compile(regex.toString())
-      val matcher = javaRegex.matcher(test)
-      if(matcher.find()) {
-        buildLogObject(matcher)
-      }else {
-        LogObject.nullLogObject
-      }
-    }*/
+    contaskLogExample match{
+      case conntaskRegext(connTask) => println("true contaskRegext")
+      case _ => println("false contaskRegext")
+    }
+    conNameLogExample match{
+      case conNameRegext(conName) => println("true conName")
+      case _ => println("false conName")
+    }
+    textLogExample match{
+      case textRegext(text) => println("true text")
+      case _ => println("false text")
+    }
+    nAsNameLogExample match{
+      case nASNameRegex(nASName) => println("true nASName")
+      case _ => println("false nASName")
+    }
+
+
+
+
+
+
+
+    /*   def buildLogObject(matcher: Matcher) = {
+         LogObject(
+           matcher.group(1),
+           matcher.group(2)
+         )
+       }
+       def parseRecord(record: String): Option[LogObject]={
+         val regex = s"$dateTimePattern,$nasNamePattern".r
+         // JAVA Style
+         val javaRegex = Pattern.compile(regex.toString())
+         val matcher = javaRegex.matcher(test)
+         if(matcher.find()) {
+           Some(buildLogObject(matcher))
+         }else {
+           None
+         }
+       }
+       def parseRecordReturningNullObjectOnFailure(record: String): LogObject={
+         val regex = s"$dateTimePattern,$nasNamePattern".r
+         // JAVA Style
+         val javaRegex = Pattern.compile(regex.toString())
+         val matcher = javaRegex.matcher(test)
+         if(matcher.find()) {
+           buildLogObject(matcher)
+         }else {
+           LogObject.nullLogObject
+         }
+       }*/
 
   }
 

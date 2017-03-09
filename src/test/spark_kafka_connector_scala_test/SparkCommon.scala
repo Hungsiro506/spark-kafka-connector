@@ -6,7 +6,7 @@ import org.apache.spark.SparkConf
 object SparkCommon {
     val colBicycle  = "bike_aggregation"
     val mongoUrl    = "mongodb://localhost:27017/streamdb." + colBicycle
-  lazy val  conf= new SparkConf()
-  conf.set("spark.mongodb.input.uri", mongoUrl)
-       .set("spark.mongodb.output.uri", mongoUrl)
+    lazy val  conf= new SparkConf()
+    conf.set("spark.mongodb.input.uri", mongoUrl)
+         .set("spark.mongodb.output.uri", mongoUrl)
 }
