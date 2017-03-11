@@ -1,4 +1,4 @@
-package core
+package com.hungsiro.spark_kafka.core
 
 /**
   * Created by hungdv on 10/03/2017.

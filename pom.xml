@@ -124,6 +124,24 @@
             <artifactId>spark-mllib_2.10</artifactId>
             <version>2.0.0</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/com.typesafe/config -->
+        <!-- https://mvnrepository.com/artifact/com.typesafe/config -->
+        <dependency>
+            <groupId>com.typesafe</groupId>
+            <artifactId>config</artifactId>
+            <version>1.2.1</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.iheart/ficus_2.11 -->
+        <!-- https://mvnrepository.com/artifact/net.ceedubs/ficus_2.11 -->
+        <dependency>
+            <groupId>net.ceedubs</groupId>
+            <artifactId>ficus_2.11</artifactId>
+            <version>1.1.1</version>
+        </dependency>
+
+
+
     </dependencies>
     <repositories>
         <!-- list of other repositories -->

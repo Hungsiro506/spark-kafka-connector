@@ -1,5 +1,5 @@
 package sources
-import core.KafkaPayLoad
+import com.hungsiro.spark_kafka.core.KafkaPayLoad
 import kafka.serializer.DefaultDecoder
 import org.apache.spark.streaming.dstream.DStream
 import org.apache.spark.streaming.StreamingContext

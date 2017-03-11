@@ -1,8 +1,8 @@
 package sinks
 import org.apache.spark.TaskContext
 import org.apache.spark.streaming.dstream.DStream
-import core.KafkaPayLoad
-import core.KafkaProducerFactory
+import com.hungsiro.spark_kafka.core.KafkaPayLoad
+import com.hungsiro.spark_kafka.core.KafkaProducerFactory
 import org.apache.log4j.Logger
 import org.apache.kafka.clients.producer.{KafkaProducer,ProducerRecord,RecordMetadata}
 /**
