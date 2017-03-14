@@ -15,7 +15,7 @@ import org.apache.spark.sql.{SQLContext, SaveMode, SparkSession}
 /**
   * Created by hungdv on 10/03/2017.
   */
-class KafkaDStreamSource(configs: Map[String,Object]) {
+class KafkaDStreamSource(configs: Map[String,Object]) extends Serializable{
 
   def createSource(scc: StreamingContext,topic: String): DStream[KafkaPayLoad] ={
     val kafkaParams = configs

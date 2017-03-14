@@ -9,6 +9,11 @@ import org.apache.spark.storage.StorageLevel
 import org.apache.spark.streaming.dstream.DStream
 import sources.KafkaDStreamSource
 import streaming.SparkStreamingApplication
+import com.hungsiro.spark_kafka.core.KafkaProducerFactory
+import org.apache.kafka.clients.producer.ProducerRecord
+import com.hungsiro.spark_kafka.core.sinks._
+import org.apache.kafka.common.serialization.StringSerializer
+
 
 import scala.concurrent.duration.FiniteDuration
 
@@ -21,12 +26,15 @@ class WordCountJob(config: WordCountJobConfig, source: KafkaDStreamSource) exten
   override def streamingCheckpointDir: String = config.streamingCheckpointDir
 
   def start(): Unit = {
-    withSparkStreamingContext { (ss, ssc) =>
-      val input: DStream[KafkaPayLoad] = source.createSource(ssc, config.inputTopic)
+    //withSparkStreamingContext { (ss, ssc) =>
+    withSparkStreamingContext { (sc, ssc) =>
+
+    val input: DStream[KafkaPayLoad] = source.createSource(ssc, config.inputTopic)
 
       // Option 1: Array[Byte] -> String
 
-      val sc = ss.sparkContext
+      //val sc = ss.sparkContext
+
       val stringCodec = sc.broadcast(KafkaPayloadStringCodec())
       //val stringCodec = sc.broadcast(KafkaPayloadStringCodec())
       val lines = input.flatMap(stringCodec.value.decodeValue(_))
@@ -55,7 +63,14 @@ class WordCountJob(config: WordCountJobConfig, source: KafkaDStreamSource) exten
 
       import sinks.KafkaDStreamSink._
       //output.sendToKafka(config.sinkKafka, config.outputTopic,sc)
-      output.sendToKafka(config.sinkKafka, config.outputTopic)
+      //val producer = KafkaProducerFactory.getOrCreateProducer(config.sinkKafka)
+      //val producerBroadast = sc.broadcast(producer)
+      //output.sendToKafka(config.sinkKafka, config.outputTopic,producerBroadcast)
+      // Broadcast bi loi  com.esotericsoftware.kryo.KryoException: java.util.ConcurrentModificationException
+      output.sendToKafka(config.sinkKafka,
+                        config.outputTopic,
+                        //s => new ProducerRecord[Array[Byte],Array[Byte]](config.outputTopic,s))
+                        s => new ProducerRecord[Array[Byte], Array[Byte]](config.outputTopic, s.key.toString.getBytes(),s.value.toString.getBytes()))
     }
   }
 
@@ -108,7 +123,6 @@ object WordCountJobConfig {
       config.as[String]("streamingCheckpointDir"),
       config.as[Map[String, String]]("kafkaSource"),
       config.as[Map[String, String]]("kafkaSink")
-
     )
   }
 
