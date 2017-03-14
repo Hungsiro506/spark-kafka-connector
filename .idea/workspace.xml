@@ -7,13 +7,9 @@
   <component name="ChangeListManager">
     <list default="true" id="acf255a2-6149-4eb5-bc9b-0a43d63cadb0" name="Default" comment="">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../kafka-guide/KafkaDemo.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/README.MD" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/scala/com/hungsiro/spark_kafka/core/sinks/KafkaWrite.scala" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/scala/com/hungsiro/spark_kafka/core/sinks/RDDKafkaWriter.scala" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../kafka-guide/.metadata/.plugins/org.eclipse.core.resources/.root/1.tree" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../kafka-guide/target/classes/ProducerWithSimplePartition/SimplePartitioner.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../kafka-guide/target/classes/ProducerWithSimplePartition/TestProducer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/scala/com/hungsiro/spark_kafka/core/sinks/KafkaSink.scala" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/parser/ClassifierLog.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/parser/ConnRawLog$.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/parser/ConnRawLog.class" afterPath="" />
@@ -28,23 +24,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../kafka-guide/target/classes/SimpleConsumer.class" afterPath="$PROJECT_DIR$/../kafka-guide/target/classes/SimpleConsumer.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../kafka-guide/target/classes/SimpleProducer.class" afterPath="$PROJECT_DIR$/../kafka-guide/target/classes/SimpleProducer.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../kafka-guide/target/classes/configurations/Constants.class" afterPath="$PROJECT_DIR$/../kafka-guide/target/classes/configurations/Constants.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/app/WordCountJob$$anonfun$start$1$$anonfun$1.class" afterPath="$PROJECT_DIR$/target/classes/app/WordCountJob$$anonfun$start$1$$anonfun$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/app/WordCountJob$$anonfun$start$1$$anonfun$2.class" afterPath="$PROJECT_DIR$/target/classes/app/WordCountJob$$anonfun$start$1$$anonfun$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/app/WordCountJob$$anonfun$start$1$$anonfun$3.class" afterPath="$PROJECT_DIR$/target/classes/app/WordCountJob$$anonfun$start$1$$anonfun$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/app/WordCountJob$$anonfun$start$1.class" afterPath="$PROJECT_DIR$/target/classes/app/WordCountJob$$anonfun$start$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/app/WordCountJob$.class" afterPath="$PROJECT_DIR$/target/classes/app/WordCountJob$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/app/WordCountJob.class" afterPath="$PROJECT_DIR$/target/classes/app/WordCountJob.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/app/WordCountJobConfig$.class" afterPath="$PROJECT_DIR$/target/classes/app/WordCountJobConfig$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/app/WordCountJobConfig.class" afterPath="$PROJECT_DIR$/target/classes/app/WordCountJobConfig.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/hungsiro/spark_kafka/core/KafkaProducerFactory$$anonfun$getOrCreateProducer$1$$anonfun$apply$1.class" afterPath="$PROJECT_DIR$/target/classes/com/hungsiro/spark_kafka/core/KafkaProducerFactory$$anonfun$getOrCreateProducer$1$$anonfun$apply$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/hungsiro/spark_kafka/core/KafkaProducerFactory$$anonfun$getOrCreateProducer$1.class" afterPath="$PROJECT_DIR$/target/classes/com/hungsiro/spark_kafka/core/KafkaProducerFactory$$anonfun$getOrCreateProducer$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/hungsiro/spark_kafka/core/KafkaProducerFactory$.class" afterPath="$PROJECT_DIR$/target/classes/com/hungsiro/spark_kafka/core/KafkaProducerFactory$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/hungsiro/spark_kafka/core/KafkaProducerFactory.class" afterPath="$PROJECT_DIR$/target/classes/com/hungsiro/spark_kafka/core/KafkaProducerFactory.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/sinks/KafkaDStreamSink$$anonfun$sendToKafka$1.class" afterPath="$PROJECT_DIR$/target/classes/sinks/KafkaDStreamSink$$anonfun$sendToKafka$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/sinks/KafkaDStreamSink$.class" afterPath="$PROJECT_DIR$/target/classes/sinks/KafkaDStreamSink$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/sinks/KafkaDStreamSink.class" afterPath="$PROJECT_DIR$/target/classes/sinks/KafkaDStreamSink.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/streaming/SparkApplication$class.class" afterPath="$PROJECT_DIR$/target/classes/streaming/SparkApplication$class.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/streaming/SparkApplication.class" afterPath="$PROJECT_DIR$/target/classes/streaming/SparkApplication.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../kafka-guide/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.rse.core.prefs" afterPath="$PROJECT_DIR$/../kafka-guide/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.rse.core.prefs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../kafka-guide/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.ide.prefs" afterPath="$PROJECT_DIR$/../kafka-guide/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.ide.prefs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../kafka-guide/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" afterPath="$PROJECT_DIR$/../kafka-guide/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" />
@@ -55,15 +34,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../kafka-guide/src/SimpleProducer.java" afterPath="$PROJECT_DIR$/../kafka-guide/src/SimpleProducer.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../kafka-guide/src/configurations/Constants.java" afterPath="$PROJECT_DIR$/../kafka-guide/src/configurations/Constants.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../kafka-guide/src/start_zookeeper_then_kafka.sh" afterPath="$PROJECT_DIR$/../kafka-guide/src/start_zookeeper_then_kafka.sh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/application.conf" afterPath="$PROJECT_DIR$/src/main/resources/application.conf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/app/WordCountJob.scala" afterPath="$PROJECT_DIR$/src/main/scala/app/WordCountJob.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/com/hungsiro/spark_kafka/core/KafkaProducerFactory.scala" afterPath="$PROJECT_DIR$/src/main/scala/com/hungsiro/spark_kafka/core/KafkaProducerFactory.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/com/hungsiro/spark_kafka/core/sinks/KafkaDStreamSink.scala" afterPath="$PROJECT_DIR$/src/main/scala/com/hungsiro/spark_kafka/core/sinks/KafkaDStreamSink.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/com/hungsiro/spark_kafka/core/sources/KafkaDStreamSource.scala" afterPath="$PROJECT_DIR$/src/main/scala/com/hungsiro/spark_kafka/core/sources/KafkaDStreamSource.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/com/hungsiro/spark_kafka/core/streaming/SparkApplication.scala" afterPath="$PROJECT_DIR$/src/main/scala/com/hungsiro/spark_kafka/core/streaming/SparkApplication.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/com/hungsiro/spark_kafka/core/streaming/SparkStreamingApplication.scala" afterPath="$PROJECT_DIR$/src/main/scala/com/hungsiro/spark_kafka/core/streaming/SparkStreamingApplication.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/application.conf" afterPath="$PROJECT_DIR$/target/classes/application.conf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.MD" afterPath="$PROJECT_DIR$/README.MD" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -134,10 +105,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="WordCountJob.scala" pinned="false" current-in-tab="true">
+      <file leaf-file-name="WordCountJob.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/app/WordCountJob.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1200">
+            <state relative-caret-position="1230">
               <caret line="82" column="0" lean-forward="true" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
               <folding>
                 <element signature="e#59#108#0" expanded="true" />
@@ -193,11 +164,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.MD" pinned="false" current-in-tab="false">
+      <file leaf-file-name="README.MD" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.MD">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="58" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="110" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -322,12 +293,12 @@
         <option value="$PROJECT_DIR$/src/main/scala/com/hungsiro/spark_kafka/core/sinks/KafkaDStreamSink.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/hungsiro/spark_kafka/core/KafkaProducerFactory.scala" />
         <option value="$PROJECT_DIR$/../kafka-guide/README.md" />
-        <option value="$PROJECT_DIR$/README.MD" />
         <option value="$PROJECT_DIR$/src/main/scala/com/hungsiro/spark_kafka/core/streaming/SparkApplication.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/hungsiro/spark_kafka/core/streaming/SparkStreamingApplication.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/app/WordCountJob.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/hungsiro/spark_kafka/core/sources/KafkaDStreamSource.scala" />
         <option value="$PROJECT_DIR$/src/main/resources/application.conf" />
+        <option value="$PROJECT_DIR$/README.MD" />
       </list>
     </option>
   </component>
@@ -1345,14 +1316,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.MD">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="58" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="110" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/hungsiro/spark_kafka/core/KafkaPayLoad.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -1419,12 +1382,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/app/WordCountJob.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1200">
+        <state relative-caret-position="1230">
           <caret line="82" column="0" lean-forward="true" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
           <folding>
             <element signature="e#59#108#0" expanded="true" />
             <element signature="e#3930#3980#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.MD">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -1,3 +1,37 @@
+Usage
+
+if you want to save an RDD to Kafka
+
+
+import com.hungsiro.spark_kafka.core.sink._
+import com.hungsiro.spark_kafka.core.source._
+import org.apache.kafka.common.serialization.StringSerializer
+
+val topic = "my-topic"
+val producerConfig: Map[String,Object] = loadConfig().producerConfig
+
+val rdd: RDD[String] = ...
+rdd.sendToKafka(
+  producerConfig,
+  s => new ProducerRecord[String, String](topic, s)
+)
+if you want to save a DStream to Kafka
+import java.util.Properties
+
+// replace by kafka08 if you're using Kafka 0.8
+import com.github.benfradet.spark.kafka010.writer._
+import org.apache.kafka.common.serialization.StringSerializer
+
+val topic = "my-topic"
+val producerConfig: Map[String,Object] = loadConfig().producerConfig
+
+val dStream: DStream[String] = ...
+dStream.sendToKafka(
+  producerConfig,
+  s => new ProducerRecord[String, String](topic, s)
+)
+
+
 Start ZooKeeper server:
 
 ./bin/zookeeper-server-start.sh config/zookeeper.properties
