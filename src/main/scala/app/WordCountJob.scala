@@ -4,10 +4,8 @@ package app
   * Created by hungdv on 10/03/2017.
   */
 import com.hungsiro.spark_kafka.core.KafkaPayLoad
+import com.hungsiro.spark_kafka.core.streaming.KafkaPayloadStringCodec
 import org.apache.spark.storage.StorageLevel
-import com.hungsiro.spark_kafka.core.sinks._
-import com.hungsiro.spark_kafka.core.sources._
-import com.hungsiro.spark_kafka.core.streaming._
 import org.apache.spark.streaming.dstream.DStream
 import sources.KafkaDStreamSource
 import streaming.SparkStreamingApplication
@@ -27,10 +25,12 @@ class WordCountJob(config: WordCountJobConfig, source: KafkaDStreamSource) exten
       val input: DStream[KafkaPayLoad] = source.createSource(ssc, config.inputTopic)
 
       // Option 1: Array[Byte] -> String
+
       val sc = ss.sparkContext
+      val stringCodec = sc.broadcast(KafkaPayloadStringCodec())
       //val stringCodec = sc.broadcast(KafkaPayloadStringCodec())
-      //val lines = input.flatMap(stringCodec.value.decodeValue(_))
-      val lines: DStream[String] = input.map(kafkaPayload => kafkaPayload.value.toString)
+      val lines = input.flatMap(stringCodec.value.decodeValue(_))
+      //val lines: DStream[String] = input.map(kafkaPayload => kafkaPayload.value.toString)
 
       // Option 2: Array[Byte] -> Specific Avro
       //val avroSpecificCodec = sc.broadcast(KafkaPayloadAvroSpecificCodec[SomeAvroType]())
@@ -45,14 +45,16 @@ class WordCountJob(config: WordCountJobConfig, source: KafkaDStreamSource) exten
       )
 
       // encode Kafka payload (e.g: to String or Avro)
-      val output: DStream[String] = countedWords
+      val output: DStream[KafkaPayLoad] = countedWords
         .map(_.toString())
+        .map(stringCodec.value.encodeValue(_))
 
 
       // cache to speed-up processing if action fails
       output.persist(StorageLevel.MEMORY_ONLY_SER)
 
       import sinks.KafkaDStreamSink._
+      //output.sendToKafka(config.sinkKafka, config.outputTopic,sc)
       output.sendToKafka(config.sinkKafka, config.outputTopic)
     }
   }
@@ -80,8 +82,7 @@ case class WordCountJobConfig(
                                streamingBatchDuration: FiniteDuration,
                                streamingCheckpointDir: String,
                                sourceKafka: Map[String, String],
-                               sinkKafka: Map[String, String])
-  extends Serializable
+                               sinkKafka: Map[String, String]) extends Serializable
 
 object WordCountJobConfig {
 
@@ -99,7 +100,7 @@ object WordCountJobConfig {
     new WordCountJobConfig(
       config.as[String]("input.topic"),
       config.as[String]("output.topic"),
-      config.as[String]("stopWords").asInstanceOf[Set[String]],
+      config.as[Set[String]]("stopWords"),
       config.as[FiniteDuration]("windowDuration"),
       config.as[FiniteDuration]("slideDuration"),
       config.as[Map[String, String]]("spark"),

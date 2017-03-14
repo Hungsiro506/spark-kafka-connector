@@ -18,7 +18,7 @@ trait SparkStreamingApplication extends SparkApplication{
         val sparkContext = sparkSession.sparkContext
 
         val streamingContext = new StreamingContext(sparkContext,Seconds(streamingBatchDuration.toSeconds))
-        streamingContext.checkpoint((streamingCheckpointDir))
+        streamingContext.checkpoint(streamingCheckpointDir)
 
         f(sparkSession,streamingContext)
 
@@ -27,4 +27,15 @@ trait SparkStreamingApplication extends SparkApplication{
 
     }
   }
+/*  def withSparkStreamingContext(f: (SparkContext, StreamingContext) => Unit): Unit = {
+    withSparkContext { sc =>
+      val ssc = new StreamingContext(sc, Seconds(streamingBatchDuration.toSeconds))
+      ssc.checkpoint(streamingCheckpointDir)
+
+      f(sc, ssc)
+
+      ssc.start()
+      ssc.awaitTermination()
+    }
+  }*/
 }

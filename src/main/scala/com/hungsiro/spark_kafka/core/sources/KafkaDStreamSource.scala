@@ -21,13 +21,14 @@ class KafkaDStreamSource(configs: Map[String,Object]) {
     val kafkaParams = configs
     val kafkaTopics = Set(topic)
 
-    KafkaUtils.createDirectStream[String,String](
+    KafkaUtils.createDirectStream[Array[Byte], Array[Byte]](
       scc,
-      PreferConsistent,
-      Subscribe[String,String](kafkaTopics,kafkaParams)
+      PreferConsistent, //locationStrategy
+      Subscribe[Array[Byte], Array[Byte]](kafkaTopics,kafkaParams) //consumerStrategy
     ).map(dstream => KafkaPayLoad(Option(dstream.key),dstream.value))
   }
 }
 object KafkaDStreamSource{
   def apply(configs: Map[String, String]): KafkaDStreamSource = new KafkaDStreamSource(configs)
 }
+ 
