@@ -7,9 +7,13 @@
   <component name="ChangeListManager">
     <list default="true" id="acf255a2-6149-4eb5-bc9b-0a43d63cadb0" name="Default" comment="">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../kafka-guide/KafkaDemo.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/scala/com/hungsiro/spark_kafka/core/Payload.scala" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/scala/com/hungsiro/spark_kafka/core/streaming/GenericKafkaPayload.scala" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/scala/com/hungsiro/spark_kafka/core/streaming/KafkaPayLoadWithNoneKey.scala" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../kafka-guide/.metadata/.plugins/org.eclipse.core.resources/.root/1.tree" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../kafka-guide/target/classes/ProducerWithSimplePartition/SimplePartitioner.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../kafka-guide/target/classes/ProducerWithSimplePartition/TestProducer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/app/WordCountJob$$anonfun$start$1$$anonfun$3.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/parser/ClassifierLog.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/parser/ConnRawLog$.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/parser/ConnRawLog.class" afterPath="" />
@@ -24,6 +28,19 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../kafka-guide/target/classes/SimpleConsumer.class" afterPath="$PROJECT_DIR$/../kafka-guide/target/classes/SimpleConsumer.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../kafka-guide/target/classes/SimpleProducer.class" afterPath="$PROJECT_DIR$/../kafka-guide/target/classes/SimpleProducer.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../kafka-guide/target/classes/configurations/Constants.class" afterPath="$PROJECT_DIR$/../kafka-guide/target/classes/configurations/Constants.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/app/WordCountJob$$anonfun$start$1$$anonfun$1.class" afterPath="$PROJECT_DIR$/target/classes/app/WordCountJob$$anonfun$start$1$$anonfun$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/app/WordCountJob$$anonfun$start$1$$anonfun$2.class" afterPath="$PROJECT_DIR$/target/classes/app/WordCountJob$$anonfun$start$1$$anonfun$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/app/WordCountJob$$anonfun$start$1$$anonfun$apply$1.class" afterPath="$PROJECT_DIR$/target/classes/app/WordCountJob$$anonfun$start$1$$anonfun$apply$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/app/WordCountJob$$anonfun$start$1.class" afterPath="$PROJECT_DIR$/target/classes/app/WordCountJob$$anonfun$start$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/app/WordCountJob$.class" afterPath="$PROJECT_DIR$/target/classes/app/WordCountJob$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/app/WordCountJobConfig$.class" afterPath="$PROJECT_DIR$/target/classes/app/WordCountJobConfig$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/app/WordCountJobConfig.class" afterPath="$PROJECT_DIR$/target/classes/app/WordCountJobConfig.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/hungsiro/spark_kafka/core/KafkaPayLoad$.class" afterPath="$PROJECT_DIR$/target/classes/com/hungsiro/spark_kafka/core/KafkaPayLoad$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/hungsiro/spark_kafka/core/KafkaPayLoad.class" afterPath="$PROJECT_DIR$/target/classes/com/hungsiro/spark_kafka/core/KafkaPayLoad.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/hungsiro/spark_kafka/core/streaming/KafkaPayloadStringCodec.class" afterPath="$PROJECT_DIR$/target/classes/com/hungsiro/spark_kafka/core/streaming/KafkaPayloadStringCodec.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/sources/KafkaDStreamSource$$anonfun$createSource$1.class" afterPath="$PROJECT_DIR$/target/classes/sources/KafkaDStreamSource$$anonfun$createSource$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/sources/KafkaDStreamSource$.class" afterPath="$PROJECT_DIR$/target/classes/sources/KafkaDStreamSource$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/sources/KafkaDStreamSource.class" afterPath="$PROJECT_DIR$/target/classes/sources/KafkaDStreamSource.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../kafka-guide/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.rse.core.prefs" afterPath="$PROJECT_DIR$/../kafka-guide/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.rse.core.prefs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../kafka-guide/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.ide.prefs" afterPath="$PROJECT_DIR$/../kafka-guide/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.ide.prefs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../kafka-guide/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" afterPath="$PROJECT_DIR$/../kafka-guide/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" />
@@ -34,7 +51,14 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../kafka-guide/src/SimpleProducer.java" afterPath="$PROJECT_DIR$/../kafka-guide/src/SimpleProducer.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../kafka-guide/src/configurations/Constants.java" afterPath="$PROJECT_DIR$/../kafka-guide/src/configurations/Constants.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../kafka-guide/src/start_zookeeper_then_kafka.sh" afterPath="$PROJECT_DIR$/../kafka-guide/src/start_zookeeper_then_kafka.sh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.MD" afterPath="$PROJECT_DIR$/README.MD" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/application.conf" afterPath="$PROJECT_DIR$/src/main/resources/application.conf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/app/WordCountJob.scala" afterPath="$PROJECT_DIR$/src/main/scala/app/WordCountJob.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/com/hungsiro/spark_kafka/core/KafkaPayLoad.scala" afterPath="$PROJECT_DIR$/src/main/scala/com/hungsiro/spark_kafka/core/KafkaPayLoad.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/com/hungsiro/spark_kafka/core/sinks/KafkaDStreamSink.scala" afterPath="$PROJECT_DIR$/src/main/scala/com/hungsiro/spark_kafka/core/sinks/KafkaDStreamSink.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/com/hungsiro/spark_kafka/core/sources/KafkaDStreamSource.scala" afterPath="$PROJECT_DIR$/src/main/scala/com/hungsiro/spark_kafka/core/sources/KafkaDStreamSource.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/com/hungsiro/spark_kafka/core/streaming/KakfaPayloadStringCodec.scala" afterPath="$PROJECT_DIR$/src/main/scala/com/hungsiro/spark_kafka/core/streaming/KakfaPayloadStringCodec.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/application.conf" afterPath="$PROJECT_DIR$/target/classes/application.conf" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -61,14 +85,14 @@
     <window id="1">
       <content type="file-editors">
         <state>
-          <leaf>
-            <file leaf-file-name="KafkaDStreamSink.scala" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/src/main/scala/com/hungsiro/spark_kafka/core/sinks/KafkaDStreamSink.scala">
+          <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+            <file leaf-file-name="BicycleStreamingConsumer.scala" pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/src/test/spark_kafka_connector_scala_test/BicycleStreamingConsumer.scala">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="125">
-                    <caret line="18" column="33" lean-forward="false" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+                  <state relative-caret-position="113">
+                    <caret line="42" column="21" lean-forward="false" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="21" />
                     <folding>
-                      <element signature="e#14#65#0" expanded="true" />
+                      <element signature="e#43#76#0" expanded="true" />
                     </folding>
                   </state>
                 </provider>
@@ -82,13 +106,13 @@
       <content type="file-editors">
         <state>
           <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-            <file leaf-file-name="BicycleStreamingConsumer.scala" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/src/test/spark_kafka_connector_scala_test/BicycleStreamingConsumer.scala">
+            <file leaf-file-name="KafkaDStreamSink.scala" pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/src/main/scala/com/hungsiro/spark_kafka/core/sinks/KafkaDStreamSink.scala">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="171">
-                    <caret line="74" column="20" lean-forward="false" selection-start-line="74" selection-start-column="8" selection-end-line="74" selection-end-column="20" />
+                  <state relative-caret-position="593">
+                    <caret line="58" column="8" lean-forward="false" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="8" />
                     <folding>
-                      <element signature="e#43#76#0" expanded="true" />
+                      <element signature="e#14#65#0" expanded="true" />
                     </folding>
                   </state>
                 </provider>
@@ -108,11 +132,11 @@
       <file leaf-file-name="WordCountJob.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/app/WordCountJob.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="72" column="145" lean-forward="false" selection-start-line="72" selection-start-column="23" selection-end-line="72" selection-end-column="148" />
+            <state relative-caret-position="1560">
+              <caret line="104" column="0" lean-forward="true" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
               <folding>
                 <element signature="e#59#108#0" expanded="true" />
-                <element signature="e#3930#3980#0" expanded="true" />
+                <element signature="e#5548#5598#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -121,8 +145,8 @@
       <file leaf-file-name="KafkaDStreamSource.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/com/hungsiro/spark_kafka/core/sources/KafkaDStreamSource.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="27" column="69" lean-forward="true" selection-start-line="27" selection-start-column="69" selection-end-line="27" selection-end-column="69" />
+            <state relative-caret-position="585">
+              <caret line="39" column="32" lean-forward="false" selection-start-line="39" selection-start-column="6" selection-end-line="39" selection-end-column="32" />
               <folding>
                 <element signature="e#16#65#0" expanded="true" />
               </folding>
@@ -130,44 +154,54 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="KafkaSparkStreamExample.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/spark_kafka_connector_scala_test/KafkaSparkStreamExample.scala">
+      <file leaf-file-name="BicycleDataProducer.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/spark_kafka_connector_scala_test/BicycleDataProducer.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="12" column="7" lean-forward="false" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
-              <folding>
-                <element signature="e#42#97#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SparkStreamingApplication.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/hungsiro/spark_kafka/core/streaming/SparkStreamingApplication.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="34" column="16" lean-forward="true" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
+            <state relative-caret-position="195">
+              <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SparkApplication.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/hungsiro/spark_kafka/core/streaming/SparkApplication.scala">
+      <file leaf-file-name="WordCount.scala" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/app/WordCount.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="2" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="15" selection-end-column="5" />
+            <state relative-caret-position="225">
+              <caret line="41" column="83" lean-forward="false" selection-start-line="41" selection-start-column="67" selection-end-line="41" selection-end-column="83" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="KakfaPayloadStringCodec.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/hungsiro/spark_kafka/core/streaming/KakfaPayloadStringCodec.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="34" column="7" lean-forward="false" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
               <folding>
-                <element signature="e#18#58#0" expanded="true" />
+                <element signature="e#48#97#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.MD" pinned="false" current-in-tab="true">
+      <file leaf-file-name="KafkaWrite.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/hungsiro/spark_kafka/core/sinks/KafkaWrite.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="6" lean-forward="false" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+              <folding>
+                <element signature="e#45#100#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.MD" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.MD">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="444">
+            <state relative-caret-position="585">
               <caret line="66" column="0" lean-forward="true" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
               <folding />
             </state>
@@ -177,39 +211,31 @@
       <file leaf-file-name="application.conf" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/application.conf">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="37" column="4" lean-forward="false" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="4" />
+            <state relative-caret-position="210">
+              <caret line="14" column="20" lean-forward="false" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../kafka-guide/README.md">
+      <file leaf-file-name="KafkaPayLoadWithNoneKey.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/hungsiro/spark_kafka/core/streaming/KafkaPayLoadWithNoneKey.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="23" column="55" lean-forward="true" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="55" />
+            <state relative-caret-position="120">
+              <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SparkConf.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-core_2.10/2.0.0/spark-core_2.10-2.0.0.jar!/org/apache/spark/SparkConf.class">
+      <file leaf-file-name="RDDKafkaWriter.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/hungsiro/spark_kafka/core/sinks/RDDKafkaWriter.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="KafkaPayLoad.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/hungsiro/spark_kafka/core/KafkaPayLoad.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="90" lean-forward="false" selection-start-line="5" selection-start-column="90" selection-end-line="5" selection-end-column="90" />
-              <folding />
+            <state relative-caret-position="150">
+              <caret line="19" column="48" lean-forward="false" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="48" />
+              <folding>
+                <element signature="e#44#71#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -248,9 +274,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../hungdv_dev/paytv-service-monitor-v2/src/main/java/bd/paytv/keeper/ZabbixKeeper.java" />
-        <option value="$PROJECT_DIR$/../hungdv_dev/paytv-service-monitor-v2/src/main/java/bd/paytv/keeper/Keeper.java" />
-        <option value="$PROJECT_DIR$/src/main/scala/parser/ObjectPatternBuilder.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/parser/RegextTest.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/parser/AbtractLogLine.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/parser/RadiusObjectPatternBuilder.scala" />
@@ -282,23 +305,26 @@
         <option value="$PROJECT_DIR$/src/main/scala/sources/KafkaDStreamSource.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/streaming/SparkApplicatiob.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/streaming/SparkStreamingApplication.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/app/WordCount.scala" />
         <option value="$PROJECT_DIR$/paytv-spark-kafka-connector.iml" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/hungsiro/spark_kafka/core/streaming/KakfaPayloadStringCodec.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/app/WordCountKryoRegistration.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/hungsiro/spark_kafka/core/KafkaPayLoad.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/hungsiro/spark_kafka/core/sinks/KafkaWrite.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/hungsiro/spark_kafka/core/sinks/RDDKafkaWriter.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/hungsiro/spark_kafka/core/sinks/KafkaDStreamSink.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/hungsiro/spark_kafka/core/KafkaProducerFactory.scala" />
         <option value="$PROJECT_DIR$/../kafka-guide/README.md" />
         <option value="$PROJECT_DIR$/src/main/scala/com/hungsiro/spark_kafka/core/streaming/SparkApplication.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/hungsiro/spark_kafka/core/streaming/SparkStreamingApplication.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/app/WordCountJob.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/hungsiro/spark_kafka/core/sources/KafkaDStreamSource.scala" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.conf" />
         <option value="$PROJECT_DIR$/README.MD" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/hungsiro/spark_kafka/core/Payload.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/hungsiro/spark_kafka/core/streaming/KafkaPayLoadWithNoneKey.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/hungsiro/spark_kafka/core/streaming/GenericKafkaPayload.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/hungsiro/spark_kafka/core/KafkaPayLoad.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/hungsiro/spark_kafka/core/sources/KafkaDStreamSource.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/app/WordCountJob.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/hungsiro/spark_kafka/core/streaming/KakfaPayloadStringCodec.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/app/WordCount.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/hungsiro/spark_kafka/core/sinks/KafkaDStreamSink.scala" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.conf" />
       </list>
     </option>
   </component>
@@ -336,9 +362,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -465,11 +488,139 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="streaming" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="paytv-spark-kafka-connector" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="paytv-spark-kafka-connector" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="streaming" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="KakfaPayloadStringCodec.scala" />
+              <option name="myItemType" value="org.jetbrains.plugins.scala.components.ScalaDefsProjectViewProvider$ScalaFileTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="paytv-spark-kafka-connector" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="paytv-spark-kafka-connector" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="sources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="KafkaDStreamSource.scala" />
+              <option name="myItemType" value="org.jetbrains.plugins.scala.components.ScalaDefsProjectViewProvider$ScalaFileTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="paytv-spark-kafka-connector" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="paytv-spark-kafka-connector" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sinks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="paytv-spark-kafka-connector" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="paytv-spark-kafka-connector" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sinks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="KafkaDStreamSink.scala" />
               <option name="myItemType" value="org.jetbrains.plugins.scala.components.ScalaDefsProjectViewProvider$ScalaFileTreeNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -581,6 +732,9 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1018,7 +1172,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="12" />
+      <option name="time" value="13" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1027,15 +1181,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../hungdv_dev/paytv-service-monitor-v2/src/main/java/bd/paytv/keeper/ZabbixKeeper.java" />
-    <entry file="file://$PROJECT_DIR$/../hungdv_dev/paytv-service-monitor-v2/src/main/java/bd/paytv/keeper/ThreeSigmaRule.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/scala/parser/ErroLogLine.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="46" lean-forward="false" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/parser/ConnRawLog.scala" />
     <entry file="file://$PROJECT_DIR$/src/main/scala/parser/LoadRawLog.scala" />
     <entry file="file://$PROJECT_DIR$/src/main/scala/parser/ClassifierLog.scala" />
@@ -1116,13 +1261,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/spark_kafka_connector_scala_test/BicycleDataProducer.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/parser/ConnLogLineObject.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -1198,7 +1336,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
           <caret line="97" column="0" lean-forward="false" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1206,7 +1343,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1214,70 +1350,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="6" lean-forward="false" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/hungsiro/spark_kafka/core/streaming/KakfaPayloadStringCodec.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="26" column="6" lean-forward="false" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
-          <folding>
-            <element signature="e#48#97#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/hungsiro/spark_kafka/core/sinks/KafkaSink.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="23" column="7" lean-forward="false" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/hungsiro/spark_kafka/core/sinks/KafkaDStreamSink.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="18" column="33" lean-forward="false" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
-          <folding>
-            <element signature="e#14#65#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/hungsiro/spark_kafka/core/sinks/KafkaWrite.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="6" lean-forward="false" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-          <folding>
-            <element signature="e#45#100#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/hungsiro/spark_kafka/core/sinks/RDDKafkaWriter.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="19" column="48" lean-forward="false" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="48" />
-          <folding>
-            <element signature="e#44#71#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/hungsiro/spark_kafka/core/sinks/KafkaSink.scala" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1770">
           <caret line="166" column="0" lean-forward="false" selection-start-line="166" selection-start-column="0" selection-end-line="166" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/app/WordCount.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="37" column="2" lean-forward="false" selection-start-line="37" selection-start-column="2" selection-end-line="37" selection-end-column="2" />
           <folding />
         </state>
       </provider>
@@ -1296,13 +1376,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
           <caret line="135" column="0" lean-forward="false" selection-start-line="135" selection-start-column="0" selection-end-line="135" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-core_2.10/2.0.0/spark-core_2.10-2.0.0.jar!/org/apache/spark/SparkConf.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
+        <state relative-caret-position="810">
           <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
           <folding />
         </state>
@@ -1310,16 +1389,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../kafka-guide/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
+        <state relative-caret-position="345">
           <caret line="23" column="55" lean-forward="true" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/hungsiro/spark_kafka/core/KafkaPayLoad.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="90" lean-forward="false" selection-start-line="5" selection-start-column="90" selection-end-line="5" selection-end-column="90" />
           <folding />
         </state>
       </provider>
@@ -1334,7 +1405,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/hungsiro/spark_kafka/core/streaming/SparkApplication.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
+        <state relative-caret-position="135">
           <caret line="10" column="2" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="15" selection-end-column="5" />
           <folding>
             <element signature="e#18#58#0" expanded="true" />
@@ -1344,28 +1415,114 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/spark_kafka_connector_scala_test/KafkaSparkStreamExample.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
+        <state relative-caret-position="105">
           <caret line="12" column="7" lean-forward="false" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/hungsiro/spark_kafka/core/Payload.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/hungsiro/spark_kafka/core/streaming/GenericKafkaPayload.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="11" lean-forward="false" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/hungsiro/spark_kafka/core/KafkaPayLoad.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.MD">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="66" column="0" lean-forward="true" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/hungsiro/spark_kafka/core/sinks/KafkaWrite.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="6" lean-forward="false" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
           <folding>
-            <element signature="e#42#97#0" expanded="false" />
+            <element signature="e#45#100#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/hungsiro/spark_kafka/core/sinks/RDDKafkaWriter.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="19" column="48" lean-forward="false" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="48" />
+          <folding>
+            <element signature="e#44#71#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/spark_kafka_connector_scala_test/BicycleDataProducer.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/spark_kafka_connector_scala_test/BicycleStreamingConsumer.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="74" column="20" lean-forward="false" selection-start-line="74" selection-start-column="8" selection-end-line="74" selection-end-column="20" />
+        <state relative-caret-position="113">
+          <caret line="42" column="21" lean-forward="false" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="21" />
           <folding>
             <element signature="e#43#76#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/hungsiro/spark_kafka/core/sources/KafkaDStreamSource.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/hungsiro/spark_kafka/core/streaming/KafkaPayLoadWithNoneKey.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/hungsiro/spark_kafka/core/sinks/KafkaDStreamSink.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="593">
+          <caret line="58" column="8" lean-forward="false" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="8" />
+          <folding>
+            <element signature="e#14#65#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/hungsiro/spark_kafka/core/streaming/KakfaPayloadStringCodec.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
-          <caret line="27" column="69" lean-forward="true" selection-start-line="27" selection-start-column="69" selection-end-line="27" selection-end-column="69" />
+          <caret line="34" column="7" lean-forward="false" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
+          <folding>
+            <element signature="e#48#97#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/hungsiro/spark_kafka/core/sources/KafkaDStreamSource.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="39" column="32" lean-forward="false" selection-start-line="39" selection-start-column="6" selection-end-line="39" selection-end-column="32" />
           <folding>
             <element signature="e#16#65#0" expanded="true" />
           </folding>
@@ -1374,27 +1531,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.conf">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="37" column="4" lean-forward="false" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="4" />
+        <state relative-caret-position="210">
+          <caret line="14" column="20" lean-forward="false" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/app/WordCountJob.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="72" column="145" lean-forward="false" selection-start-line="72" selection-start-column="23" selection-end-line="72" selection-end-column="148" />
+        <state relative-caret-position="1560">
+          <caret line="104" column="0" lean-forward="true" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
           <folding>
             <element signature="e#59#108#0" expanded="true" />
-            <element signature="e#3930#3980#0" expanded="true" />
+            <element signature="e#5548#5598#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.MD">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/app/WordCount.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="66" column="0" lean-forward="true" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+        <state relative-caret-position="225">
+          <caret line="41" column="83" lean-forward="false" selection-start-line="41" selection-start-column="67" selection-end-line="41" selection-end-column="83" />
           <folding />
         </state>
       </provider>

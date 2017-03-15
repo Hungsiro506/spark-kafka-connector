@@ -56,7 +56,7 @@ class KafkaDStreamSink[T: ClassTag](@transient private val dstream: DStream[T])
   }
 }
 
-object KafkaDStreamSink{
+object  KafkaDStreamSink{
   import scala.language.implicitConversions
 
   implicit def createKafkaDStreamSink[T: ClassTag, K,V](dStream: DStream[T]): KafkaWrite[T] = {

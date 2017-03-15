@@ -29,7 +29,9 @@ class WordCountJob(config: WordCountJobConfig, source: KafkaDStreamSource) exten
     //withSparkStreamingContext { (ss, ssc) =>
     withSparkStreamingContext { (sc, ssc) =>
 
-    val input: DStream[KafkaPayLoad] = source.createSource(ssc, config.inputTopic)
+    //val input: DStream[KafkaPayLoad] = source.createSource(ssc, config.inputTopic)
+    //val input: DStream[String] = source.createSource(ssc, config.inputTopic)
+      val input: DStream[KafkaPayLoad] = source.createSourceOfKafkaPayload(ssc, config.inputTopic)
 
       // Option 1: Array[Byte] -> String
 
@@ -37,7 +39,8 @@ class WordCountJob(config: WordCountJobConfig, source: KafkaDStreamSource) exten
 
       val stringCodec = sc.broadcast(KafkaPayloadStringCodec())
       //val stringCodec = sc.broadcast(KafkaPayloadStringCodec())
-      val lines = input.flatMap(stringCodec.value.decodeValue(_))
+      //val lines = input.flatMap(stringCodec.value.decodeValue(_))
+      val lines: DStream[String] = input.map(kafkaPayload => kafkaPayload.value.toString)
       //val lines: DStream[String] = input.map(kafkaPayload => kafkaPayload.value.toString)
 
       // Option 2: Array[Byte] -> Specific Avro
@@ -52,11 +55,26 @@ class WordCountJob(config: WordCountJobConfig, source: KafkaDStreamSource) exten
         config.slideDuration
       )
 
-      // encode Kafka payload (e.g: to String or Avro)
+      /*      // encode Kafka payload (e.g: to String or Avro)
       val output: DStream[KafkaPayLoad] = countedWords
-        .map(_.toString())
-        .map(stringCodec.value.encodeValue(_))
-
+      .map(_.toString())
+      .map(stringCodec.value.encodeValue(_))
+      // cache to speed-up processing if action fails
+      output.persist(StorageLevel.MEMORY_ONLY_SER)
+      import sinks.KafkaDStreamSink._
+      //output.sendToKafka(config.sinkKafka, config.outputTopic,sc)
+      //val producer = KafkaProducerFactory.getOrCreateProducer(config.sinkKafka)
+      //val producerBroadast = sc.broadcast(producer)
+      //output.sendToKafka(config.sinkKafka, config.outputTopic,producerBroadcast)
+      // Broadcast bi loi  com.esotericsoftware.kryo.KryoException: java.util.ConcurrentModificationException
+      output.sendToKafka(config.sinkKafka,
+        config.outputTopic,
+        //s => new ProducerRecord[String,String](config.outputTopic,s.key.toString,s.value.toString))
+        s => new ProducerRecord[Array[Byte], Array[Byte]](config.outputTopic, s.key.toString.getBytes(),s.value.toString.getBytes()))*/
+      val output: DStream[(String,String)] = countedWords.map(payload => (payload._1,payload._2.toString))
+      //.map(_.toString())
+      //.map(stringCodec.value.encodeValue(_)).map(payload => (payload.key.toString,payload.value.toString))
+      //map(payload => (payload.key.toString,payload.value.toString))
 
       // cache to speed-up processing if action fails
       output.persist(StorageLevel.MEMORY_ONLY_SER)
@@ -67,10 +85,14 @@ class WordCountJob(config: WordCountJobConfig, source: KafkaDStreamSource) exten
       //val producerBroadast = sc.broadcast(producer)
       //output.sendToKafka(config.sinkKafka, config.outputTopic,producerBroadcast)
       // Broadcast bi loi  com.esotericsoftware.kryo.KryoException: java.util.ConcurrentModificationException
-      output.sendToKafka(config.sinkKafka,
+      /*output.sendToKafka(config.sinkKafka,
                         config.outputTopic,
                         //s => new ProducerRecord[Array[Byte],Array[Byte]](config.outputTopic,s))
-                        s => new ProducerRecord[Array[Byte], Array[Byte]](config.outputTopic, s.key.toString.getBytes(),s.value.toString.getBytes()))
+                        s => new ProducerRecord[Array[Byte], Array[Byte]](config.outputTopic, s.key.toString.getBytes(),s.value.toString.getBytes()))*/
+      output.sendToKafka(config.sinkKafka,
+        config.outputTopic,
+        s=> new ProducerRecord[String,String](config.outputTopic,s._1,s._1.toString+" " +s._2.toString))
+
     }
   }
 

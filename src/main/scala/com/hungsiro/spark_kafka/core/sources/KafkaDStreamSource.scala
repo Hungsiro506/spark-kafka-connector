@@ -17,7 +17,7 @@ import org.apache.spark.sql.{SQLContext, SaveMode, SparkSession}
   */
 class KafkaDStreamSource(configs: Map[String,Object]) extends Serializable{
 
-  def createSource(scc: StreamingContext,topic: String): DStream[KafkaPayLoad] ={
+ /* def createSource(scc: StreamingContext,topic: String): DStream[KafkaPayLoad] ={
     val kafkaParams = configs
     val kafkaTopics = Set(topic)
 
@@ -25,6 +25,26 @@ class KafkaDStreamSource(configs: Map[String,Object]) extends Serializable{
       scc,
       PreferConsistent, //locationStrategy
       Subscribe[Array[Byte], Array[Byte]](kafkaTopics,kafkaParams) //consumerStrategy
+    ).map(dstream => KafkaPayLoad(Option(dstream.key),dstream.value))
+  }*/
+   def createSource(scc: StreamingContext,topic: String): DStream[String] ={
+   val kafkaParams = configs
+   val kafkaTopics = Set(topic)
+
+   KafkaUtils.createDirectStream[String,String](
+     scc,
+     PreferConsistent, //locationStrategy
+     Subscribe[String, String](kafkaTopics,kafkaParams) //consumerStrategy
+   ).map(dstream => dstream.value)
+ }
+  def createSourceOfKafkaPayload(scc: StreamingContext,topic: String): DStream[KafkaPayLoad] ={
+    val kafkaParams = configs
+    val kafkaTopics = Set(topic)
+
+    KafkaUtils.createDirectStream[String,String](
+      scc,
+      PreferConsistent, //locationStrategy
+      Subscribe[String, String](kafkaTopics,kafkaParams) //consumerStrategy
     ).map(dstream => KafkaPayLoad(Option(dstream.key),dstream.value))
   }
 }
