@@ -10,29 +10,94 @@ import scala.util.{Failure, Success}
   * Created by hungdv on 13/03/2017.
   */
 class KafkaPayloadStringCodec extends Serializable{
+
+
+
+}
+object KafkaPayloadStringCodec {
   @transient lazy private val logger = Logger.getLogger(getClass)
   @transient lazy implicit private val stringInjection = StringCodec.utf8
+  def apply(): KafkaPayloadStringCodec = new KafkaPayloadStringCodec
 
-  def decodeValue(payload: KafkaPayLoad): Option[String] = {
-    val decodedTry = Injection.invert[String, Array[Byte]](payload.value)
-    decodedTry match {
+  private def decodeValue[K,V](payload: KafkaPayLoad[K,V]): (Option[String]) = {
+
+    val decodedValueTry = Injection.invert[String, V](payload.value)
+    decodedValueTry match {
       case Success(record) =>
         Some(record)
       case Failure(ex) =>
-        logger.warn("Could not decode payload", ex)
+        logger.warn("Could not decode value of payload", ex)
+        None
+    }
+
+  }
+  private def decodeKey[K,V](payload: KafkaPayLoad[K,V]): (Option[String]) = {
+
+    val decodedValueTry = Injection.invert[String, K](payload.key)
+    decodedValueTry match {
+      case Success(record) =>
+        Some(record)
+      case Failure(ex) =>
+        logger.warn("Could not decode value of payload", ex)
+        None
+    }
+
+  }
+
+  /**
+    * Decode Kafka Payload with full key-value
+    * @param payload Payload with Key-Value pair
+    * @tparam K Key Type
+    * @tparam V Value Type
+    * @return (Option[String],Option[String]) concreate (String,String) From KafkaPayload
+    */
+  def decodePayload[K,V](payload: KafkaPayLoad[K,V]): (Option[String],Option[String]) ={
+    return (decodeKey(payload),decodeValue(payload))
+  }
+
+  /**
+    * Decode Kafka Payload with key only and neglect key
+    * @param payload Payload without Key.
+    * @tparam K Key Type
+    * @tparam V Value Type
+    * @return Option[String] Concreate String of value from Kafka payload
+    */
+  def decodePayload[K,V](payload: KafkaPayLoadWithNoneKey[K,V]):(Option[String]) ={
+    val decodedValueTry = Injection.invert[String, V](payload.value)
+    decodedValueTry match {
+      case Success(record) =>
+        Some(record)
+      case Failure(ex) =>
+        logger.warn("Could not decode value of payload", ex)
         None
     }
   }
 
-  def encodeValue(value: String): KafkaPayLoad = {
-    val encoded = Injection[String, Array[Byte]](value)
-    KafkaPayLoad(None, encoded)
+  /**
+    * Encode String to Kafka Payload value only
+    * @param value
+    * @tparam K
+    * @tparam V
+    * @return Kafka Payload Without key
+    */
+  def encode[K,V](value: String): KafkaPayLoadWithNoneKey[K,V] = {
+    val encoded = Injection[String, V](value)
+    KafkaPayLoadWithNoneKey(None, encoded)
   }
 
-}
+  /**
+    * Encode String-String to Kafka Payload key-value pair
+    * @param key
+    * @param value
+    * @tparam K
+    * @tparam V
+    * @return KafkaPayLoad
+    */
+  def encode[K,V](key: String,value: String): KafkaPayLoad[K,V] = {
+    val encodedValue = Injection[String, V](value)
+    val encodedKey = Injection[String,K](key)
+    KafkaPayLoad(encodedKey, encodedValue)
+  }
 
-
-object KafkaPayloadStringCodec {
-  def apply(): KafkaPayloadStringCodec = new KafkaPayloadStringCodec
 }
 
