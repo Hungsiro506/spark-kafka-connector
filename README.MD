@@ -47,11 +47,11 @@ dStream.sendToKafka(
 ```
 ### Create input topic:
 ```sh
-./bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 3 --topic input
+./bin/kafka-topics.sh --create --zookeeper localhost:2182 --replication-factor 1 --partitions 1 --topic input
 ```
 ### Create output topic:
 ```sh
-./bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 3 --topic output
+./bin/kafka-topics.sh --create --zookeeper localhost:2182 --replication-factor 1 --partitions 1 --topic output
 ```
 ### Start Kafka producer:
 ```sh

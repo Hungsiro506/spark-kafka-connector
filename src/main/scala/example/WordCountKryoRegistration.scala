@@ -1,4 +1,4 @@
-package app
+package example
 import com.esotericsoftware.kryo.Kryo
 import org.apache.spark.serializer.KryoRegistrator
 import com.hungsiro.spark_kafka.core.streaming.KafkaPayloadStringCodec

@@ -8,7 +8,7 @@ import org.apache.log4j.Logger
 import scala.collection.mutable
 import org.apache.kafka.common.serialization.{ByteArraySerializer,ByteArrayDeserializer}
 
-private object KafkaProducerFactory {
+object KafkaProducerFactory {
   import scala.collection.JavaConversions._
 
   private val logger = Logger.getLogger(getClass)

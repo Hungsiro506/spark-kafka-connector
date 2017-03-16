@@ -11,7 +11,7 @@ trait SparkStreamingApplication extends SparkApplication{
   def streamingBatchDuration: FiniteDuration
 
   def streamingCheckpointDir: String
-
+  //NEw API - Spark Session. - not tested yet
 /*  def withSparkStreamingContext(f: (SparkSession,StreamingContext)=> Unit): Unit = {
     withSparkSession{
       sparkSession =>
@@ -27,6 +27,7 @@ trait SparkStreamingApplication extends SparkApplication{
 
     }
   }*/
+  // OLD API
   def withSparkStreamingContext(f: (SparkContext, StreamingContext) => Unit): Unit = {
     withSparkContext { sc =>
       val ssc = new StreamingContext(sc, Seconds(streamingBatchDuration.toSeconds))

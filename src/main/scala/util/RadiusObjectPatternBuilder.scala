@@ -103,12 +103,12 @@ object AtomicPattern {
   val rejectRegexPattern: Regex       = s"$time2\\s+$ssThreadId\\s+$conTask\\s+$conName,\\s+$rejectCause,\\s+$rejectResultDetail".r
 
   //Define head and tail of load - conn log for classifier
-  val loadHead = "\"(\\w{3,} \\d{2} \\d{4} \\d{2}:\\d{2}:\\d{2}|[a-zA-Z]{6,})\""  // time1 | status
+  val loadHead: String = "\"(\\w{3,} \\d{2} \\d{4} \\d{2}:\\d{2}:\\d{2}|[a-zA-Z]{6,})\""  // time1 | status
   val loadTail = "(.*)" // Match any cheracter except new line.
   val loadGeneralRegex = s"$loadHead,$loadTail".r
 
-  val connHead  = time2
-  val connTail  = "(.*)"
+  val connHead: String = time2
+  val connTail: String = "(.*)"
   val connGeneralRegex = s"$connHead\\s+$connTail".r
 
 

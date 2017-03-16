@@ -1,4 +1,4 @@
-package app
+package example
 
 /**
   * Created by hungdv on 10/03/2017.
