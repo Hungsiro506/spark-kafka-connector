@@ -164,6 +164,27 @@
             <artifactId>chill-avro_2.10</artifactId>
             <version>0.7.2</version>
         </dependency>
+      <!--  &lt;!&ndash; https://mvnrepository.com/artifact/org.elasticsearch/elasticsearch-spark-20_2.11 &ndash;&gt;
+        <dependency>
+            <groupId>org.elasticsearch</groupId>
+            <artifactId>elasticsearch-spark-20_2.11</artifactId>
+            <version>5.0.0-alpha5</version>
+        </dependency>-->
+        <!-- https://mvnrepository.com/artifact/org.elasticsearch/elasticsearch-spark_2.10 -->
+        <!-- https://mvnrepository.com/artifact/org.elasticsearch/elasticsearch-spark-20_2.10 -->
+        <dependency>
+            <groupId>org.elasticsearch</groupId>
+            <artifactId>elasticsearch-spark-20_2.10</artifactId>
+            <version>5.0.0-alpha5</version>
+        </dependency>
+
+
+        <!-- https://mvnrepository.com/artifact/RedisLabs/spark-redis -->
+        <dependency>
+            <groupId>RedisLabs</groupId>
+            <artifactId>spark-redis</artifactId>
+            <version>0.3.2</version>
+        </dependency>
 
 
 

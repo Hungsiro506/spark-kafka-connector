@@ -11,7 +11,7 @@ import sinks.KafkaDStreamSinkExceptionHandler
 
 import scala.concurrent.duration.FiniteDuration
 import scala.util.matching.Regex
-
+import org.elasticsearch.spark._
 /**
   * Created by hungdv on 16/03/2017.
   */
@@ -86,6 +86,8 @@ object Prefilter {
           producer.send(record,callback)
         }.toList
       }
+
+      /*rdd.saveToEs("test/radius")*/
     }
   }
 }
