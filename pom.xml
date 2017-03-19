@@ -16,6 +16,24 @@
         <mongo.spark.version>1.1.0</mongo.spark.version>
     </properties>
 
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.scala-tools</groupId>
+                <artifactId>maven-scala-plugin</artifactId>
+                <version>2.11</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>compile</goal>
+                            <goal>testCompile</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
     <dependencies>
         <!-- https://mvnrepository.com/artifact/org.apache.kafka/kafka_2.10 -->
         <dependency>
@@ -89,11 +107,6 @@
             <groupId>dibbhatt</groupId>
             <artifactId>kafka-spark-consumer</artifactId>
             <version>1.0.10</version>
-        </dependency>
-        <dependency>
-            <groupId>org.scala-tools</groupId>
-            <artifactId>maven-scala-plugin</artifactId>
-            <version>2.11</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.apache.spark/spark-core_2.10 -->
         <dependency>
