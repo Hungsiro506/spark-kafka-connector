@@ -63,4 +63,15 @@ dStream.sendToKafka(
 ```
 Run example application and publish a few words on input topic using Kafka console producer and check the processing result on output topic using Kafka console producer.
 
+## Development
 
+### Prerequisite
+
+- jdk 1.8
+- maven
+
+### Building
+
+```shell
+mvn install && mvn clean && mvn compile
+```

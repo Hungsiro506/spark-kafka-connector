@@ -19,7 +19,7 @@ object KafkaPayloadStringCodec {
   @transient lazy implicit private val stringInjection = StringCodec.utf8
   def apply(): KafkaPayloadStringCodec = new KafkaPayloadStringCodec
 
-  private def decodeValue[K,V](payload: KafkaPayLoad[K,V]): (Option[String]) = {
+  private def decodeValue[K,V](payload: KafkaPayLoad[K,V])(implicit vInj: Injection[String, V]): Option[String] = {
 
     val decodedValueTry = Injection.invert[String, V](payload.value)
     decodedValueTry match {
@@ -31,7 +31,7 @@ object KafkaPayloadStringCodec {
     }
 
   }
-  private def decodeKey[K,V](payload: KafkaPayLoad[K,V]): (Option[String]) = {
+  private def decodeKey[K,V](payload: KafkaPayLoad[K,V])(implicit kInj: Injection[String, K]): Option[String] = {
 
     val decodedValueTry = Injection.invert[String, K](payload.key)
     decodedValueTry match {
@@ -51,7 +51,7 @@ object KafkaPayloadStringCodec {
     * @tparam V Value Type
     * @return (Option[String],Option[String]) concreate (String,String) From KafkaPayload
     */
-  def decodePayload[K,V](payload: KafkaPayLoad[K,V]): (Option[String],Option[String]) ={
+  def decodePayload[K,V](payload: KafkaPayLoad[K,V])(implicit kInj: Injection[String, K], vInj: Injection[String, V]): (Option[String], Option[String]) ={
     return (decodeKey(payload),decodeValue(payload))
   }
 
@@ -62,7 +62,7 @@ object KafkaPayloadStringCodec {
     * @tparam V Value Type
     * @return Option[String] Concreate String of value from Kafka payload
     */
-  def decodePayload[K,V](payload: KafkaPayLoadWithNoneKey[K,V]):(Option[String]) ={
+  def decodePayload[K,V](payload: KafkaPayLoadWithNoneKey[K,V])(implicit vInj: Injection[String, V]): Option[String] = {
     val decodedValueTry = Injection.invert[String, V](payload.value)
     decodedValueTry match {
       case Success(record) =>
@@ -80,7 +80,7 @@ object KafkaPayloadStringCodec {
     * @tparam V
     * @return Kafka Payload Without key
     */
-  def encode[K,V](value: String): KafkaPayLoadWithNoneKey[K,V] = {
+  def encode[K,V](value: String)(implicit vInj: Injection[String, V]): KafkaPayLoadWithNoneKey[K,V] = {
     val encoded = Injection[String, V](value)
     KafkaPayLoadWithNoneKey(None, encoded)
   }
@@ -93,7 +93,7 @@ object KafkaPayloadStringCodec {
     * @tparam V
     * @return KafkaPayLoad
     */
-  def encode[K,V](key: String,value: String): KafkaPayLoad[K,V] = {
+  def encode[K,V](key: String,value: String)(implicit kInj: Injection[String, K], vInj: Injection[String, V]): KafkaPayLoad[K,V] = {
     val encodedValue = Injection[String, V](value)
     val encodedKey = Injection[String,K](key)
     KafkaPayLoad(encodedKey, encodedValue)
