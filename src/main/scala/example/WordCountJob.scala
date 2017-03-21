@@ -27,7 +27,7 @@ class WordCountJob(config: WordCountJobConfig, source: KafkaDStreamSource) exten
 
   def start(): Unit = {
     //withSparkStreamingContext { (ss, ssc) =>
-    withSparkStreamingContext { (sc, ssc) =>
+    withSparkStreamingContext { (ss, ssc) =>
 
     //val input: DStream[KafkaPayLoad] = source.createSource(ssc, config.inputTopic)
     //val input: DStream[String] = source.createSource(ssc, config.inputTopic)
@@ -36,7 +36,7 @@ class WordCountJob(config: WordCountJobConfig, source: KafkaDStreamSource) exten
       // Option 1: Array[Byte] -> String
 
       //val sc = ss.sparkContext
-
+      val sc = ss.sparkContext
       val stringCodec = sc.broadcast(KafkaPayloadStringCodec())
       //val stringCodec = sc.broadcast(KafkaPayloadStringCodec())
       //val lines = input.flatMap(stringCodec.value.decodeValue(_))

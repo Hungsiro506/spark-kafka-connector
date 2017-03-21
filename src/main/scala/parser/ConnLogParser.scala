@@ -27,7 +27,7 @@ class ConnLogParser extends AbtractLogParser {
         => return Option(ConnLogLineObject(c_time2,c_ssThreadId,c_contask.substring(11,17),c_conName,c_nASName,c_undefinedText))
 
       case rejectPattern(c_time2,c_ssThreadId,c_contask,c_conName,c_rejectCause,c_rejectResultDetail)
-        => return Option(ConnLogLineObject(c_time2,c_ssThreadId,c_contask,c_conName,c_rejectCause,c_rejectResultDetail))
+        => return Option(ConnLogLineObject(c_time2,c_ssThreadId,c_contask.substring(11,17),c_conName,c_rejectCause,c_rejectResultDetail))
 
       case _ => Some(ErroLogLine(line))
     }

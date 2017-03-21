@@ -1,0 +1,12 @@
+
+
+Connect to Cassandra from cqlsh
+$ sudo docker run -it --link some-cassandra:cassandra --rm cassandra sh -c 'exec cqlsh "$CASSANDRA_PORT_9042_TCP_ADDR"'
+
+CREATE KEYSPACE radius WITH REPLICATION = { 'class' : 'SimpleStrategy','replication_factor' : 1};
+
+-> DESCRIBE keyspaces;
+
+CREATE TABLE connLog (time text, session_id text,connect_type text,name text,content1 text,content2 text, PRIMARY KEY(time,session_id));
+
+//"time","session_id","connect_type","name","content1","content2"

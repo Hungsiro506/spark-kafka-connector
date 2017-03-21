@@ -43,14 +43,15 @@ object ParseAndCountConnLog {
 
     val bConLogParser   = sc.broadcast(conLogParser)
 
-    val objectConnLogs: DStream[Option[AbtractLogLine]] = lines.transform(extractValue(bConLogParser)).cache()
+    val objectConnLogs: DStream[ConnLogLineObject] = lines.transform(extractValue(bConLogParser)).cache()
         objectConnLogs.saveToCassandra(cassandraConfig("keySpace").toString,
-                                       cassandraConfig("talbe").toString,
+                                       cassandraConfig("table").toString,
                                        SomeColumns("time","session_id","connect_type","name","content1","content2"))
     //Sorry, it's 7PM, iam too lazy to code. so i did too much hard code here :)).
     val connType = objectConnLogs
-      .map(conlog => (conlog.get.asInstanceOf[ConnLogLineObject].conType,1))
+      .map(conlog => (conlog.connect_type,1))
       .reduceByKeyAndWindow(_ + _,_ -_,bWindowDuration.value,bSlideDuration.value)
+      //.transform(skipEmptyWordCount) //Uncommnet this line to remove empty wordcoutn such as : SignInt : Count 0
       .transform(toWouldCountObject)
       .foreachRDD{rdd =>
       val data = rdd.toDF()
@@ -61,7 +62,7 @@ object ParseAndCountConnLog {
     }
   def toLowerCase   = (lines: RDD[String]) => lines.map(words => words.toLowerCase)
   def extractValue  = (parser: Broadcast[ConnLogParser]) => (lines: RDD[String]) =>
-    lines.map(line => parser.value.extractValues(line))
+    lines.map(line => parser.value.extractValues(line).get.asInstanceOf[ConnLogLineObject])
   def toWouldCountObject = (streams : RDD[(String,Int)]) => streams.map(tuple => StatusCount(tuple._1.toString, tuple._2,getCurrentTime()))
   def getCurrentTime():String ={
     val now = Calendar.getInstance().getTime
@@ -69,6 +70,7 @@ object ParseAndCountConnLog {
     val nowFormeted = nowFormater.format(now).toString
     return nowFormeted
   }
+  def skipEmptyWordCount = (streams : RDD[(String,Int)]) => streams.filter(wordCount => wordCount._2 > 0)
   }
 
 case class StatusCount(connType: String,count: Int,time: String) extends Serializable{}
