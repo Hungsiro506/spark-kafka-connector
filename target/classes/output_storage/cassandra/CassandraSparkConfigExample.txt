@@ -1,0 +1,34 @@
+val conf: SparkConf = new SparkConf().setAppName(sparkAppName).setMaster("local[2]")
+	.set("spark.cassandra.connection.host", cassandraHost)
+    //  The maximum total size of the batch in bytes.
+    conf.set("spark.cassandra.output.batch.size.rows", "auto")
+    // maximum concurrent writes in a spark job
+    conf.set("spark.cassandra.output.concurrent.writes", "10")
+    // Number of bytes per single batch
+    conf.set("spark.cassandra.output.batch.size.bytes", "100000")
+    //
+    The following Cassandra-specific properties are recognized:
+
+    cassandra.connection.native.port
+    //Default = 9042. Port for native client protocol connections.
+
+    spark.cassandra.connection.rpc.port
+    //Default = 9160. Port for thrift connections.
+
+    spark.cassandra.connection.host
+    //Default = Spark master address. Address of the Cassandra node to contact to obtain connections to Cassandra.
+    //Used only initially to fetch the list of other nodes in the cluster. Subsequent connections are made to the closest node.
+
+    spark.cassandra.input.split.size
+    //Default = 100000. Approximate number of rows in a single Spark partition.
+    //The higher the value, the fewer Spark tasks are created. Increasing the value too much may limit the parallelism level.
+
+    spark.cassandra.input.page.row.size
+    //Default = 1000. Number of rows being fetched per roundtrip to Cassandra.
+    //Increasing this value increases memory consumption. Decreasing the value increases the number of roundtrips.
+
+    spark.cassandra.username
+    //User name for authenticating in Cassandra.
+
+    spark.cassandra.password
+    //Password for authenticating in Cassandra.

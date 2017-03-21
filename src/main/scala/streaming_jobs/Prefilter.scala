@@ -34,8 +34,11 @@ object Prefilter {
 
     // Time consuming :))) should i code some fucking hard code here??
     // Broadcast all static variables
+    // Broadcast WindowDuration and Slide Duration in case you need to reduce DStream by Key and Window.
+    //
     val bWindowDuration   = sc.broadcast(windowDuration)
     val bSlideDuration    = sc.broadcast(slideDuration)
+    //
     val bGeneralLogRegex  = sc.broadcast(generalLogRegex)
     val bComponentMatcher = sc.broadcast(componentMatcher)
     val bTopics           = sc.broadcast(topics)

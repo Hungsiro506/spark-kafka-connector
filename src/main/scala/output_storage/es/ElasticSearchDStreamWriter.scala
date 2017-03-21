@@ -14,8 +14,7 @@ import scala.reflect.ClassTag
   * Don't need to rewrite any things.
   *
   * @param dstream
-  *
-  * @tparam T
+  * @tparam T RDD type needs to be a Map, JavaBean,or Scala case class ( content can be translated into documents)
   */
 class ElasticSearchDStreamWriter[T: ClassTag](@transient private val dstream: DStream[T] )extends StorageWriter{
   private val defaultIndexName: String  = "spark_streaming_default_index"
@@ -24,16 +23,13 @@ class ElasticSearchDStreamWriter[T: ClassTag](@transient private val dstream: DS
   override def persistToStorage(storageConfig: Map[String, String]): Unit = {
     val indexName     = storageConfig.getOrElse("index", defaultIndexName)
     val `typeName`      = storageConfig.getOrElse("type",defaultTypeName)
-    println("index :  " + indexName)
-    println("type :  " + `typeName`)
     dstream.foreachRDD{
       rdd =>
-        rdd.foreach(println(_))
         rdd.saveToEs(indexName + "/" + `typeName`)
     }
-    println("Saved to ES")
   }
 }
+
 object ElasticSearchDStreamWriter{
   import scala.language.implicitConversions
   implicit def createESWriter[T: ClassTag](dstream: DStream[T]): ElasticSearchDStreamWriter[T] = {
