@@ -10,6 +10,7 @@ import com.mongodb.spark.MongoSpark
 import kafka.serializer.StringDecoder
 import org.apache.kafka.clients.producer.{KafkaProducer, ProducerRecord}
 import org.apache.kafka.common.serialization.StringDeserializer
+import org.apache.spark.sql.SparkSession
 
 //import org.apache.spark.streaming.kafka.KafkaUtils
 import org.apache.spark.streaming.kafka010._

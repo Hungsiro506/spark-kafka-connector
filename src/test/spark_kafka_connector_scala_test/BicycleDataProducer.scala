@@ -12,9 +12,6 @@ import org.apache.kafka.clients.producer.{KafkaProducer, ProducerRecord}
 import scala.util.Random
 import scala.util.control.Breaks
 
-/**
-  * Created by vincent on 1/16/2017.
-  */
 object BicycleDataProducer {
   def main(args: Array[String]): Unit = {
 
@@ -28,11 +25,11 @@ object BicycleDataProducer {
 
     //val intervalEvent = util.Try(args(3)).getOrElse("1").toInt //in second
 
-    val intervalEvent = util.Try(args(3)).getOrElse("0").toInt //in second
+    val intervalEvent = scala.util.Try(args(3)).getOrElse("0").toInt //in second
 
-    val rndStart = util.Try(args(4)).getOrElse("0").toInt //in second
+    val rndStart = scala.util.Try(args(4)).getOrElse("0").toInt //in second
 
-    val rndEnd = util.Try(args(5)).getOrElse("500").toInt //in second
+    val rndEnd = scala.util.Try(args(5)).getOrElse("500").toInt //in second
 
     val clientId = UUID.randomUUID().toString()
 

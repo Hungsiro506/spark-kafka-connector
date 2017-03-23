@@ -1,0 +1,12 @@
+sudo docker run -it --link some-cassandra:cassandra --rm cassandra sh -c 'exec cqlsh "$CASSANDRA_PORT_9042_TCP_ADDR"'
+
+
+viewing log :
+sudo docker exec -it some-cassandra bash
+sudo docker logs some-cassandra
+
+
+
+cli:
+describe tables;
+describe keyspaces;

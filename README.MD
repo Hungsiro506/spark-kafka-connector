@@ -64,3 +64,6 @@ dStream.sendToKafka(
 Run example application and publish a few words on input topic using Kafka console producer and check the processing result on output topic using Kafka console producer.
 
 
+./bin/kafka-topics.sh --zookeeper localhost:2182 --list
+
+./bin/kafka-topics.sh --create --zookeeper localhost:2182 --replication-factor 1 --partitions 1 --topic radiusConLog
