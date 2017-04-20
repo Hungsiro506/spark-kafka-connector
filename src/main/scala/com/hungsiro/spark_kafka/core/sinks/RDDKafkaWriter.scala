@@ -34,7 +34,5 @@ class RDDKafkaWriter[T: ClassTag](@transient private val rdd: RDD[T] )
       }.toList
 
     }
-
-
   }
 }

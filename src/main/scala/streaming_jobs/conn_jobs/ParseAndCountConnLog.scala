@@ -49,16 +49,17 @@ object ParseAndCountConnLog {
 
     val bConLogParser   = sc.broadcast(conLogParser)
 
-    val objectConnLogs: DStream[ConnLogLineObject] = lines.transform(extractValue(bConLogParser)).cache()
+    val objectConnLogs: DStream[ConnLogLineObject] = lines.transform(extractValue(bConLogParser))
         objectConnLogs.saveToCassandra(cassandraConfig("keySpace").toString,
                                        cassandraConfig("table").toString,
                                        SomeColumns("time","session_id","connect_type","name","content1","content2"))
 
-    //Sorry, it's 7PM, iam too lazy to code. so i did too much hard code here :)).
+
+    //Sorry, it was 7PM, i was too lazy to code. so i did too much hard code here :)).
     val connType = objectConnLogs
       .map(conlog => (conlog.connect_type,1))
-      .reduceByKeyAndWindow(_ + _,_ -_,bWindowDuration.value,bSlideDuration.value).cache()
-      .transform(skipEmptyWordCount) //Uncommnet this line to remove empty wordcoutn such as : SignInt : Count 0
+      .reduceByKeyAndWindow( _ + _ , _ -_ , bWindowDuration.value,bSlideDuration.value)
+      .transform(skipEmptyWordCount)  //Uncommnet this line to remove empty wordcoutn such as : SignInt : Count 0
     /*
     Accumulative count
     */

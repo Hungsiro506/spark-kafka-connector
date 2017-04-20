@@ -10,8 +10,8 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <scala.version>2.10.4</scala.version>
-        <scala.built.version>2.10</scala.built.version>
+        <scala.version>2.11.7</scala.version>
+        <scala.built.version>2.11</scala.built.version>
         <jackson.version>2.8.4</jackson.version>
         <mongo.spark.version>1.1.0</mongo.spark.version>
     </properties>
@@ -81,7 +81,7 @@
         <!-- https://mvnrepository.com/artifact/org.mongodb.spark/mongo-spark-connector_2.10 -->
         <dependency>
             <groupId>org.mongodb.spark</groupId>
-            <artifactId>mongo-spark-connector_2.10</artifactId>
+            <artifactId>mongo-spark-connector_${scala.built.version}</artifactId>
             <version>2.0.0</version>
         </dependency>
 
@@ -98,32 +98,39 @@
         <!-- https://mvnrepository.com/artifact/org.apache.spark/spark-core_2.10 -->
         <dependency>
             <groupId>org.apache.spark</groupId>
-            <artifactId>spark-core_2.10</artifactId>
+            <artifactId>spark-core_${scala.built.version}</artifactId>
             <version>2.0.0</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.apache.spark/spark-sql_2.10 -->
         <dependency>
             <groupId>org.apache.spark</groupId>
-            <artifactId>spark-sql_2.10</artifactId>
+            <artifactId>spark-sql_${scala.built.version}</artifactId>
             <version>2.0.0</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.apache.spark/spark-streaming_2.10 -->
         <dependency>
             <groupId>org.apache.spark</groupId>
-            <artifactId>spark-streaming_2.10</artifactId>
+            <artifactId>spark-streaming_${scala.built.version}</artifactId>
             <version>2.0.0</version>
         </dependency>
         <dependency>
             <groupId>org.apache.spark</groupId>
-            <artifactId>spark-streaming-kafka-0-10-assembly_2.10</artifactId>
+            <artifactId>spark-streaming-kafka-0-10-assembly_${scala.built.version}</artifactId>
             <version>2.1.0</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.apache.spark/spark-mllib_2.10 -->
         <dependency>
             <groupId>org.apache.spark</groupId>
-            <artifactId>spark-mllib_2.10</artifactId>
+            <artifactId>spark-mllib_${scala.built.version}</artifactId>
             <version>2.0.0</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.spark/spark-graphx_2.10 -->
+        <dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-graphx_${scala.built.version}</artifactId>
+            <version>2.0.0</version>
+        </dependency>
+
         <!-- https://mvnrepository.com/artifact/com.typesafe/config -->
         <!-- https://mvnrepository.com/artifact/com.typesafe/config -->
 <!--        <dependency>
@@ -149,8 +156,9 @@
         <!-- https://mvnrepository.com/artifact/net.ceedubs/ficus_2.11 -->
         <dependency>
             <groupId>net.ceedubs</groupId>
-            <artifactId>ficus_2.10</artifactId>
-            <version>1.0.1</version>
+            <artifactId>ficus_${scala.built.version}</artifactId>
+            <!--<version>1.0.1</version>-->
+            <version>1.1.2</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/com.twitter/bijection-avro_2.10 -->
         <dependency>
@@ -174,7 +182,7 @@
         <!-- https://mvnrepository.com/artifact/org.elasticsearch/elasticsearch-spark-20_2.10 -->
         <dependency>
             <groupId>org.elasticsearch</groupId>
-            <artifactId>elasticsearch-spark-20_2.10</artifactId>
+            <artifactId>elasticsearch-spark-20_${scala.built.version}</artifactId>
             <version>5.0.0-alpha5</version>
         </dependency>
 
@@ -188,7 +196,7 @@
         <!-- https://mvnrepository.com/artifact/com.datastax.spark/spark-cassandra-connector_2.10 -->
         <dependency>
             <groupId>com.datastax.spark</groupId>
-            <artifactId>spark-cassandra-connector_2.10</artifactId>
+            <artifactId>spark-cassandra-connector_${scala.built.version}</artifactId>
             <version>2.0.0</version>
         </dependency>
         <!--base 64 -->

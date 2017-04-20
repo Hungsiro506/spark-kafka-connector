@@ -149,7 +149,8 @@ class ConcurrentHashMapAccumulator(private var accumulator:  mutable.Map[String,
     this(new ConcurrentHashMap[String,Int]() asScala)
     val  runner  =  new  RunCheckReset()
     val  timer  =  new  Timer()
-    timer.schedule(runner, 0, 1000*60)
+    timer.scheduleAtFixedRate(runner,0, 600000L) // not work
+    timer.schedule(runner,0, 600000L) // not work
   }
 
   override def isZero: Boolean = {
@@ -228,15 +229,21 @@ class ConcurrentHashMapAccumulator(private var accumulator:  mutable.Map[String,
       }
     }*/
    override def run(): Unit = {
-     val now = new DateTime();
-     val midnight = now.withTimeAtStartOfDay
-     //val midnight = new DateTime(2017,3,23,18, 31, 0, 0); // testing purpose
+     val now = new DateTime()
+     //val midnight = now.withTimeAtStartOfDay
+     /*val midnight = new DateTime(2017,3 ,24 ,9 ,30 ,0 ,0); // testing purpose
      val duration = new Duration(midnight, now)
      val seconds = duration.toStandardSeconds().getSeconds()
      if (seconds >= 0 && seconds < 61) {
        reset()
        logger.info(s"Reset accumulator at ${now}.")
-       //println("Acc has been reset")
+       println("Acc has been reset at " + now + "in " + TaskContext.getPartitionId() )
+     }*/
+     println("Now is " + now + " in " + TaskContext.getPartitionId())
+     try{
+       Thread.sleep(25000L) // not work!
+     }catch{
+       case ie: InterruptedException => println(ie)
      }
    }
   }

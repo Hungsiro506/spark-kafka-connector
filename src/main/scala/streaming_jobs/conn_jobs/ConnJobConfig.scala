@@ -15,16 +15,16 @@ import scala.concurrent.duration.FiniteDuration
   * @param sourceKafka
   */
   case class ConnJobConfig(
-                                 inputTopic: String,
-                                 windowDuration: FiniteDuration,
-                                 slideDuration: FiniteDuration,
-                                 streamingBatchDuration: FiniteDuration,
-                                 streamingCheckPointDir: String,
-                                 sparkConfig: Map[String,String],
-                                 sourceKafka: Map[String,String],
-                                 cassandraStorage: Map[String,String],
-                                 mongoStorage: Map[String,String]
-                               )extends Serializable{
+                           inputTopic: String,
+                           windowDuration: FiniteDuration,
+                           slideDuration: FiniteDuration,
+                           streamingBatchDuration: FiniteDuration,
+                           streamingCheckPointDir: String,
+                           sparkConfig: Map[String,String],
+                           sourceKafka: Map[String,String],
+                           cassandraStorage: Map[String,String],
+                           mongoStorage: Map[String,String]
+                         )extends Serializable{
   }
   object ConnJobConfig {
     import com.typesafe.config.{Config,ConfigFactory}
