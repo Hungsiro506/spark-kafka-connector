@@ -205,6 +205,19 @@
             <artifactId>commons-codec</artifactId>
             <version>1.10</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/com.twitter/algebird-core_2.11 -->
+        <dependency>
+            <groupId>com.twitter</groupId>
+            <artifactId>algebird-core_${scala.built.version}</artifactId>
+            <version>0.8.0</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.spark/spark-streaming-twitter_2.11 -->
+        <dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-streaming-twitter_${scala.built.version}</artifactId>
+            <version>1.6.0</version>
+        </dependency>
+
 
 
     </dependencies>
@@ -215,4 +228,5 @@
             <url>http://dl.bintray.com/spark-packages/maven</url>
         </repository>
     </repositories>
+
 </project>

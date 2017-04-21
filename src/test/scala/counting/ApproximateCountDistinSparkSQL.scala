@@ -20,8 +20,3 @@ object ApproximateCountDistinSparkSQL {
 
   }
 }
-object StreamHLL{
-  def main(args: Array[String]): Unit = {
-
-  }
-}
