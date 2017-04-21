@@ -24,5 +24,4 @@ object StreamHLL{
   def main(args: Array[String]): Unit = {
 
   }
-
 }

@@ -7,351 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="acf255a2-6149-4eb5-bc9b-0a43d63cadb0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../kafka-guide/KafkaDemo.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_twitter_chill_2_11_0_8_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_ceedubs_ficus_2_11_1_1_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_scala_lang_modules_scala_parser_combinators_2_11_1_0_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_scala_lang_modules_scala_xml_2_11_1_0_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/scala/counting/ApproximateCountDistinSparkSQL.scala" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/scala/counting/SQLTranformerWithJoin.scala" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../kafka-guide/.metadata/.plugins/org.eclipse.core.resources/.root/1.tree" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../kafka-guide/target/classes/ProducerWithSimplePartition/SimplePartitioner.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../kafka-guide/target/classes/ProducerWithSimplePartition/TestProducer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_ceedubs_ficus_2_10_1_0_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_scalamacros_quasiquotes_2_10_2_0_0_M8.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/app/WordCount$$anonfun$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/app/WordCount$$anonfun$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/app/WordCount$$anonfun$3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/app/WordCount$$anonfun$4$$anonfun$apply$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/app/WordCount$$anonfun$4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/app/WordCount$$anonfun$5$$anonfun$apply$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/app/WordCount$$anonfun$5.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/app/WordCount$$anonfun$6$$anonfun$apply$3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/app/WordCount$$anonfun$6.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/app/WordCount$$anonfun$7$$anonfun$apply$4$$anonfun$apply$5.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/app/WordCount$$anonfun$7$$anonfun$apply$4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/app/WordCount$$anonfun$7.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/app/WordCount$$anonfun$8$$anonfun$apply$6.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/app/WordCount$$anonfun$8.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/app/WordCount$$anonfun$9.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/app/WordCount$.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/app/WordCount.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/app/WordCountJob$$anonfun$start$1$$anonfun$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/app/WordCountJob$$anonfun$start$1$$anonfun$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/app/WordCountJob$$anonfun$start$1$$anonfun$3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/app/WordCountJob$$anonfun$start$1$$anonfun$apply$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/app/WordCountJob$$anonfun$start$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/app/WordCountJob$.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/app/WordCountJob.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/app/WordCountJobConfig$.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/app/WordCountJobConfig.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/app/WordCountKryoRegistration.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/output_storage/es/ElasticSearchDStreamWriter$$anonfun$persistToStorage$1$$anonfun$apply$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/parser/ClassifierLog.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/parser/ConnRawLog$.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/parser/ConnRawLog.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/parser/LoadRawLog$.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/parser/LoadRawLog.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/sinks/KafkaDStreamSink$$anonfun$sendToKafka$1$$anonfun$apply$1$$anonfun$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/sinks/KafkaDStreamSink$$anonfun$sendToKafka$1$$anonfun$apply$1$$anonfun$apply$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/sinks/KafkaDStreamSink$$anonfun$sendToKafka$1$$anonfun$apply$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/ParseAndCountConnLog$$anonfun$4$$typecreator3$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/ParseAndCountConnLog$$anonfun$4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/ParseAndCountConnLog$$anonfun$extractValue$1$$anonfun$apply$2$$anonfun$apply$3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/ParseAndCountConnLog$$anonfun$extractValue$1$$anonfun$apply$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/ParseAndCountConnLog$$anonfun$parseAndCount$1$$typecreator3$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/ParseAndCountConnLog$$anonfun$parseAndCount$2$$typecreator4$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/ParseAndCountConnLog$$anonfun$skipEmptyWordCount$1$$anonfun$apply$5.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/ParseAndCountConnLog$$anonfun$toLowerCase$1$$anonfun$apply$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/ParseAndCountConnLog$$anonfun$toWouldCountObject$1$$anonfun$apply$4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/BicycleStreamingConsumer$$anonfun$main$3$$typecreator1$1.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_datastax_spark_spark_cassandra_connector_2_10_2_0_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_datastax_spark_spark_cassandra_connector_2_11_2_0_0.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_scala_2_10_2_8_4.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_scala_2_11_2_8_4.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_twitter_chill_2_10_0_8_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_twitter_chill_2_10_0_7_2.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_catalyst_2_10_2_0_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_catalyst_2_11_2_0_0.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_core_2_10_2_0_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_core_2_11_2_0_0.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_graphx_2_10_2_0_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_sketch_2_11_2_0_0.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_launcher_2_10_2_0_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_launcher_2_11_2_0_0.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_mllib_2_10_2_0_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_mllib_2_11_2_0_0.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_mllib_local_2_10_2_0_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_mllib_local_2_11_2_0_0.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_network_common_2_10_2_0_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_network_common_2_11_2_0_0.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_network_shuffle_2_10_2_0_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_network_shuffle_2_11_2_0_0.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_sketch_2_10_2_0_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_unsafe_2_11_2_0_0.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_sql_2_10_2_0_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_sql_2_11_2_0_0.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_streaming_2_10_2_0_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_streaming_2_11_2_0_0.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_streaming_kafka_0_10_assembly_2_10_2_1_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_streaming_kafka_0_10_assembly_2_11_2_1_0.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_tags_2_10_2_0_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_tags_2_11_2_0_0.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_unsafe_2_10_2_0_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_graphx_2_11_2_0_0.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_elasticsearch_elasticsearch_spark_20_2_10_5_0_0_alpha5.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_elasticsearch_elasticsearch_spark_20_2_11_5_0_0_alpha5.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_json4s_json4s_ast_2_10_3_2_11.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_json4s_json4s_ast_2_11_3_2_11.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_json4s_json4s_core_2_10_3_2_11.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_json4s_json4s_core_2_11_3_2_11.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_json4s_json4s_jackson_2_10_3_2_11.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_json4s_json4s_jackson_2_11_3_2_11.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_spark_mongo_spark_connector_2_10_2_0_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_spark_mongo_spark_connector_2_11_2_0_0.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_scala_lang_scala_compiler_2_10_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_scala_lang_scala_compiler_2_11_0.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_scala_lang_scala_reflect_2_10_6.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_scala_lang_scala_reflect_2_11_8.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_scala_lang_scalap_2_10_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_scala_lang_scalap_2_11_0.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_scalanlp_breeze_2_10_0_11_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_scalanlp_breeze_2_11_0_11_2.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_scalanlp_breeze_macros_2_10_0_11_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_scalanlp_breeze_macros_2_11_0_11_2.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_scalatest_scalatest_2_10_2_2_6.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_scalatest_scalatest_2_11_2_2_6.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_spire_math_spire_2_10_0_7_4.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_spire_math_spire_2_11_0_7_4.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_spire_math_spire_macros_2_10_0_7_4.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_spire_math_spire_macros_2_11_0_7_4.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../kafka-guide/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index" afterPath="$PROJECT_DIR$/../kafka-guide/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../kafka-guide/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" afterPath="$PROJECT_DIR$/../kafka-guide/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../kafka-guide/target/classes/SimpleConsumer.class" afterPath="$PROJECT_DIR$/../kafka-guide/target/classes/SimpleConsumer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../kafka-guide/target/classes/SimpleProducer.class" afterPath="$PROJECT_DIR$/../kafka-guide/target/classes/SimpleProducer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../kafka-guide/target/classes/configurations/Constants.class" afterPath="$PROJECT_DIR$/../kafka-guide/target/classes/configurations/Constants.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/hungsiro/spark_kafka/core/KafkaPayLoad$.class" afterPath="$PROJECT_DIR$/target/classes/com/hungsiro/spark_kafka/core/KafkaPayLoad$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/hungsiro/spark_kafka/core/KafkaPayLoad.class" afterPath="$PROJECT_DIR$/target/classes/com/hungsiro/spark_kafka/core/KafkaPayLoad.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/hungsiro/spark_kafka/core/KafkaProducerFactory$$anonfun$getOrCreateProducer$1$$anonfun$apply$1.class" afterPath="$PROJECT_DIR$/target/classes/com/hungsiro/spark_kafka/core/KafkaProducerFactory$$anonfun$getOrCreateProducer$1$$anonfun$apply$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/hungsiro/spark_kafka/core/KafkaProducerFactory$$anonfun$getOrCreateProducer$1.class" afterPath="$PROJECT_DIR$/target/classes/com/hungsiro/spark_kafka/core/KafkaProducerFactory$$anonfun$getOrCreateProducer$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/hungsiro/spark_kafka/core/KafkaProducerFactory$.class" afterPath="$PROJECT_DIR$/target/classes/com/hungsiro/spark_kafka/core/KafkaProducerFactory$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/hungsiro/spark_kafka/core/KafkaProducerFactory.class" afterPath="$PROJECT_DIR$/target/classes/com/hungsiro/spark_kafka/core/KafkaProducerFactory.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/hungsiro/spark_kafka/core/Payload.class" afterPath="$PROJECT_DIR$/target/classes/com/hungsiro/spark_kafka/core/Payload.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/hungsiro/spark_kafka/core/sinks/KafkaWrite.class" afterPath="$PROJECT_DIR$/target/classes/com/hungsiro/spark_kafka/core/sinks/KafkaWrite.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/hungsiro/spark_kafka/core/sinks/RDDKafkaWriter$$anonfun$sendToKafka$1$$anonfun$1.class" afterPath="$PROJECT_DIR$/target/classes/com/hungsiro/spark_kafka/core/sinks/RDDKafkaWriter$$anonfun$sendToKafka$1$$anonfun$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/hungsiro/spark_kafka/core/sinks/RDDKafkaWriter$$anonfun$sendToKafka$1.class" afterPath="$PROJECT_DIR$/target/classes/com/hungsiro/spark_kafka/core/sinks/RDDKafkaWriter$$anonfun$sendToKafka$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/hungsiro/spark_kafka/core/sinks/RDDKafkaWriter.class" afterPath="$PROJECT_DIR$/target/classes/com/hungsiro/spark_kafka/core/sinks/RDDKafkaWriter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/hungsiro/spark_kafka/core/streaming/GenericKafkaPayload$.class" afterPath="$PROJECT_DIR$/target/classes/com/hungsiro/spark_kafka/core/streaming/GenericKafkaPayload$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/hungsiro/spark_kafka/core/streaming/GenericKafkaPayload.class" afterPath="$PROJECT_DIR$/target/classes/com/hungsiro/spark_kafka/core/streaming/GenericKafkaPayload.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/hungsiro/spark_kafka/core/streaming/KafkaPayLoadWithNoneKey$.class" afterPath="$PROJECT_DIR$/target/classes/com/hungsiro/spark_kafka/core/streaming/KafkaPayLoadWithNoneKey$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/hungsiro/spark_kafka/core/streaming/KafkaPayLoadWithNoneKey.class" afterPath="$PROJECT_DIR$/target/classes/com/hungsiro/spark_kafka/core/streaming/KafkaPayLoadWithNoneKey.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/hungsiro/spark_kafka/core/streaming/KafkaPayloadStringCodec$.class" afterPath="$PROJECT_DIR$/target/classes/com/hungsiro/spark_kafka/core/streaming/KafkaPayloadStringCodec$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/hungsiro/spark_kafka/core/streaming/KafkaPayloadStringCodec.class" afterPath="$PROJECT_DIR$/target/classes/com/hungsiro/spark_kafka/core/streaming/KafkaPayloadStringCodec.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/example/WordCount$$anonfun$1.class" afterPath="$PROJECT_DIR$/target/classes/example/WordCount$$anonfun$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/example/WordCount$$anonfun$2.class" afterPath="$PROJECT_DIR$/target/classes/example/WordCount$$anonfun$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/example/WordCount$$anonfun$3.class" afterPath="$PROJECT_DIR$/target/classes/example/WordCount$$anonfun$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/example/WordCount$$anonfun$4$$anonfun$apply$1.class" afterPath="$PROJECT_DIR$/target/classes/example/WordCount$$anonfun$4$$anonfun$apply$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/example/WordCount$$anonfun$4.class" afterPath="$PROJECT_DIR$/target/classes/example/WordCount$$anonfun$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/example/WordCount$$anonfun$5$$anonfun$apply$2.class" afterPath="$PROJECT_DIR$/target/classes/example/WordCount$$anonfun$5$$anonfun$apply$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/example/WordCount$$anonfun$5.class" afterPath="$PROJECT_DIR$/target/classes/example/WordCount$$anonfun$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/example/WordCount$$anonfun$6$$anonfun$apply$3.class" afterPath="$PROJECT_DIR$/target/classes/example/WordCount$$anonfun$6$$anonfun$apply$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/example/WordCount$$anonfun$6.class" afterPath="$PROJECT_DIR$/target/classes/example/WordCount$$anonfun$6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/example/WordCount$$anonfun$7$$anonfun$apply$4$$anonfun$apply$5.class" afterPath="$PROJECT_DIR$/target/classes/example/WordCount$$anonfun$7$$anonfun$apply$4$$anonfun$apply$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/example/WordCount$$anonfun$7$$anonfun$apply$4.class" afterPath="$PROJECT_DIR$/target/classes/example/WordCount$$anonfun$7$$anonfun$apply$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/example/WordCount$$anonfun$7.class" afterPath="$PROJECT_DIR$/target/classes/example/WordCount$$anonfun$7.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/example/WordCount$$anonfun$8$$anonfun$apply$6.class" afterPath="$PROJECT_DIR$/target/classes/example/WordCount$$anonfun$8$$anonfun$apply$6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/example/WordCount$$anonfun$8.class" afterPath="$PROJECT_DIR$/target/classes/example/WordCount$$anonfun$8.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/example/WordCount$$anonfun$9.class" afterPath="$PROJECT_DIR$/target/classes/example/WordCount$$anonfun$9.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/example/WordCount$.class" afterPath="$PROJECT_DIR$/target/classes/example/WordCount$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/example/WordCount.class" afterPath="$PROJECT_DIR$/target/classes/example/WordCount.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/example/WordCountJob$$anonfun$start$1$$anonfun$1.class" afterPath="$PROJECT_DIR$/target/classes/example/WordCountJob$$anonfun$start$1$$anonfun$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/example/WordCountJob$$anonfun$start$1$$anonfun$2.class" afterPath="$PROJECT_DIR$/target/classes/example/WordCountJob$$anonfun$start$1$$anonfun$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/example/WordCountJob$$anonfun$start$1$$anonfun$apply$1.class" afterPath="$PROJECT_DIR$/target/classes/example/WordCountJob$$anonfun$start$1$$anonfun$apply$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/example/WordCountJob$$anonfun$start$1.class" afterPath="$PROJECT_DIR$/target/classes/example/WordCountJob$$anonfun$start$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/example/WordCountJob$.class" afterPath="$PROJECT_DIR$/target/classes/example/WordCountJob$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/example/WordCountJob.class" afterPath="$PROJECT_DIR$/target/classes/example/WordCountJob.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/example/WordCountJobConfig$.class" afterPath="$PROJECT_DIR$/target/classes/example/WordCountJobConfig$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/example/WordCountJobConfig.class" afterPath="$PROJECT_DIR$/target/classes/example/WordCountJobConfig.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/example/WordCountKryoRegistration.class" afterPath="$PROJECT_DIR$/target/classes/example/WordCountKryoRegistration.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main.class" afterPath="$PROJECT_DIR$/target/classes/main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/output_storage/StorageWriter.class" afterPath="$PROJECT_DIR$/target/classes/output_storage/StorageWriter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/output_storage/es/ElasticSearchDStreamWriter$$anonfun$1.class" afterPath="$PROJECT_DIR$/target/classes/output_storage/es/ElasticSearchDStreamWriter$$anonfun$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/output_storage/es/ElasticSearchDStreamWriter$$anonfun$2.class" afterPath="$PROJECT_DIR$/target/classes/output_storage/es/ElasticSearchDStreamWriter$$anonfun$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/output_storage/es/ElasticSearchDStreamWriter$$anonfun$persistToStorage$1.class" afterPath="$PROJECT_DIR$/target/classes/output_storage/es/ElasticSearchDStreamWriter$$anonfun$persistToStorage$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/output_storage/es/ElasticSearchDStreamWriter$.class" afterPath="$PROJECT_DIR$/target/classes/output_storage/es/ElasticSearchDStreamWriter$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/output_storage/es/ElasticSearchDStreamWriter.class" afterPath="$PROJECT_DIR$/target/classes/output_storage/es/ElasticSearchDStreamWriter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/parser/AbtractLogLine.class" afterPath="$PROJECT_DIR$/target/classes/parser/AbtractLogLine.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/parser/AbtractLogParser.class" afterPath="$PROJECT_DIR$/target/classes/parser/AbtractLogParser.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/parser/ConnLogLineObject$.class" afterPath="$PROJECT_DIR$/target/classes/parser/ConnLogLineObject$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/parser/ConnLogLineObject.class" afterPath="$PROJECT_DIR$/target/classes/parser/ConnLogLineObject.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/parser/ConnLogParser.class" afterPath="$PROJECT_DIR$/target/classes/parser/ConnLogParser.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/parser/ErroLogLine$.class" afterPath="$PROJECT_DIR$/target/classes/parser/ErroLogLine$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/parser/ErroLogLine.class" afterPath="$PROJECT_DIR$/target/classes/parser/ErroLogLine.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/parser/LoadLogLineObject$.class" afterPath="$PROJECT_DIR$/target/classes/parser/LoadLogLineObject$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/parser/LoadLogLineObject.class" afterPath="$PROJECT_DIR$/target/classes/parser/LoadLogLineObject.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/parser/LoadLogParser.class" afterPath="$PROJECT_DIR$/target/classes/parser/LoadLogParser.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/parser/subStringTest$.class" afterPath="$PROJECT_DIR$/target/classes/parser/subStringTest$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/sinks/KafkaDStreamSink$$anonfun$sendToKafka$1.class" afterPath="$PROJECT_DIR$/target/classes/sinks/KafkaDStreamSink$$anonfun$sendToKafka$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/sinks/KafkaDStreamSink$.class" afterPath="$PROJECT_DIR$/target/classes/sinks/KafkaDStreamSink$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/sinks/KafkaDStreamSink.class" afterPath="$PROJECT_DIR$/target/classes/sinks/KafkaDStreamSink.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/sinks/KafkaDStreamSinkExceptionHandler$$anonfun$throwExceptionIfAny$1.class" afterPath="$PROJECT_DIR$/target/classes/sinks/KafkaDStreamSinkExceptionHandler$$anonfun$throwExceptionIfAny$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/sinks/KafkaDStreamSinkExceptionHandler.class" afterPath="$PROJECT_DIR$/target/classes/sinks/KafkaDStreamSinkExceptionHandler.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/sources/KafkaDStreamSource$$anonfun$createSource$1.class" afterPath="$PROJECT_DIR$/target/classes/sources/KafkaDStreamSource$$anonfun$createSource$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/sources/KafkaDStreamSource$$anonfun$createSourceOfKafkaPayload$1.class" afterPath="$PROJECT_DIR$/target/classes/sources/KafkaDStreamSource$$anonfun$createSourceOfKafkaPayload$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/sources/KafkaDStreamSource$.class" afterPath="$PROJECT_DIR$/target/classes/sources/KafkaDStreamSource$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/sources/KafkaDStreamSource.class" afterPath="$PROJECT_DIR$/target/classes/sources/KafkaDStreamSource.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/streaming/SparkApplication$$anonfun$withSparkContext$1.class" afterPath="$PROJECT_DIR$/target/classes/streaming/SparkApplication$$anonfun$withSparkContext$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/streaming/SparkApplication$$anonfun$withSparkSession$1.class" afterPath="$PROJECT_DIR$/target/classes/streaming/SparkApplication$$anonfun$withSparkSession$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/streaming/SparkApplication$class.class" afterPath="$PROJECT_DIR$/target/classes/streaming/SparkApplication$class.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/streaming/SparkApplication.class" afterPath="$PROJECT_DIR$/target/classes/streaming/SparkApplication.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/streaming/SparkStreamingApplication$$anonfun$withSparkStreamingContext$1.class" afterPath="$PROJECT_DIR$/target/classes/streaming/SparkStreamingApplication$$anonfun$withSparkStreamingContext$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/streaming/SparkStreamingApplication$class.class" afterPath="$PROJECT_DIR$/target/classes/streaming/SparkStreamingApplication$class.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/streaming/SparkStreamingApplication.class" afterPath="$PROJECT_DIR$/target/classes/streaming/SparkStreamingApplication.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/streaming_jobs/ComponentMatcherEnum$.class" afterPath="$PROJECT_DIR$/target/classes/streaming_jobs/ComponentMatcherEnum$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/streaming_jobs/ComponentMatcherEnum.class" afterPath="$PROJECT_DIR$/target/classes/streaming_jobs/ComponentMatcherEnum.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/streaming_jobs/Prefilter$$anonfun$classify$1$$anonfun$apply$1$$anonfun$1.class" afterPath="$PROJECT_DIR$/target/classes/streaming_jobs/Prefilter$$anonfun$classify$1$$anonfun$apply$1$$anonfun$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/streaming_jobs/Prefilter$$anonfun$classify$1$$anonfun$apply$1$$anonfun$2.class" afterPath="$PROJECT_DIR$/target/classes/streaming_jobs/Prefilter$$anonfun$classify$1$$anonfun$apply$1$$anonfun$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/streaming_jobs/Prefilter$$anonfun$classify$1$$anonfun$apply$1.class" afterPath="$PROJECT_DIR$/target/classes/streaming_jobs/Prefilter$$anonfun$classify$1$$anonfun$apply$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/streaming_jobs/Prefilter$$anonfun$classify$1.class" afterPath="$PROJECT_DIR$/target/classes/streaming_jobs/Prefilter$$anonfun$classify$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/streaming_jobs/Prefilter$.class" afterPath="$PROJECT_DIR$/target/classes/streaming_jobs/Prefilter$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/streaming_jobs/Prefilter.class" afterPath="$PROJECT_DIR$/target/classes/streaming_jobs/Prefilter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/streaming_jobs/PrefilterJob$$anonfun$start$1.class" afterPath="$PROJECT_DIR$/target/classes/streaming_jobs/PrefilterJob$$anonfun$start$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/streaming_jobs/PrefilterJob$.class" afterPath="$PROJECT_DIR$/target/classes/streaming_jobs/PrefilterJob$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/streaming_jobs/PrefilterJob.class" afterPath="$PROJECT_DIR$/target/classes/streaming_jobs/PrefilterJob.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/streaming_jobs/PrefilterJobConfig$.class" afterPath="$PROJECT_DIR$/target/classes/streaming_jobs/PrefilterJobConfig$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/streaming_jobs/PrefilterJobConfig.class" afterPath="$PROJECT_DIR$/target/classes/streaming_jobs/PrefilterJobConfig.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/streaming_jobs/RegexLogEnum$.class" afterPath="$PROJECT_DIR$/target/classes/streaming_jobs/RegexLogEnum$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/streaming_jobs/RegexLogEnum.class" afterPath="$PROJECT_DIR$/target/classes/streaming_jobs/RegexLogEnum.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/streaming_jobs/TopicFilteredEnum$.class" afterPath="$PROJECT_DIR$/target/classes/streaming_jobs/TopicFilteredEnum$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/streaming_jobs/TopicFilteredEnum.class" afterPath="$PROJECT_DIR$/target/classes/streaming_jobs/TopicFilteredEnum.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/BaseMapAccumulator$$anonfun$add$7.class" afterPath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/BaseMapAccumulator$$anonfun$add$7.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/BaseMapAccumulator$$anonfun$add$8.class" afterPath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/BaseMapAccumulator$$anonfun$add$8.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/BaseMapAccumulator$$anonfun$add$9.class" afterPath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/BaseMapAccumulator$$anonfun$add$9.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/BaseMapAccumulator$$anonfun$addOtherHashMap$3.class" afterPath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/BaseMapAccumulator$$anonfun$addOtherHashMap$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/BaseMapAccumulator$$anonfun$copy$3.class" afterPath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/BaseMapAccumulator$$anonfun$copy$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/BaseMapAccumulator$$anonfun$value$1.class" afterPath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/BaseMapAccumulator$$anonfun$value$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/BaseMapAccumulator.class" afterPath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/BaseMapAccumulator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/ConcurrentHashMapAccumulator$$anonfun$add$4.class" afterPath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/ConcurrentHashMapAccumulator$$anonfun$add$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/ConcurrentHashMapAccumulator$$anonfun$add$5.class" afterPath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/ConcurrentHashMapAccumulator$$anonfun$add$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/ConcurrentHashMapAccumulator$$anonfun$add$6.class" afterPath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/ConcurrentHashMapAccumulator$$anonfun$add$6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/ConcurrentHashMapAccumulator$$anonfun$addOtherHashMap$2.class" afterPath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/ConcurrentHashMapAccumulator$$anonfun$addOtherHashMap$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/ConcurrentHashMapAccumulator$$anonfun$copy$2.class" afterPath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/ConcurrentHashMapAccumulator$$anonfun$copy$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/ConcurrentHashMapAccumulator$RunCheckReset.class" afterPath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/ConcurrentHashMapAccumulator$RunCheckReset.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/ConcurrentHashMapAccumulator.class" afterPath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/ConcurrentHashMapAccumulator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/ConcurrentMapAccumulator.class" afterPath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/ConcurrentMapAccumulator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/ConnJob$$anonfun$start$1.class" afterPath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/ConnJob$$anonfun$start$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/ConnJob$.class" afterPath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/ConnJob$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/ConnJob.class" afterPath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/ConnJob.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/ConnJobConfig$.class" afterPath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/ConnJobConfig$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/ConnJobConfig.class" afterPath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/ConnJobConfig.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/MapAccumulator$$anon$1.class" afterPath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/MapAccumulator$$anon$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/MapAccumulator$$anonfun$add$1.class" afterPath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/MapAccumulator$$anonfun$add$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/MapAccumulator$$anonfun$add$2.class" afterPath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/MapAccumulator$$anonfun$add$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/MapAccumulator$$anonfun$add$3.class" afterPath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/MapAccumulator$$anonfun$add$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/MapAccumulator$$anonfun$addOtherHashMap$1.class" afterPath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/MapAccumulator$$anonfun$addOtherHashMap$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/MapAccumulator$$anonfun$copy$1.class" afterPath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/MapAccumulator$$anonfun$copy$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/MapAccumulator.class" afterPath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/MapAccumulator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/ParseAndCountConnLog$$anonfun$1.class" afterPath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/ParseAndCountConnLog$$anonfun$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/ParseAndCountConnLog$$anonfun$2.class" afterPath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/ParseAndCountConnLog$$anonfun$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/ParseAndCountConnLog$$anonfun$3.class" afterPath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/ParseAndCountConnLog$$anonfun$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/ParseAndCountConnLog$$anonfun$extractValue$1$$anonfun$apply$3$$anonfun$apply$4.class" afterPath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/ParseAndCountConnLog$$anonfun$extractValue$1$$anonfun$apply$3$$anonfun$apply$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/ParseAndCountConnLog$$anonfun$extractValue$1$$anonfun$apply$3.class" afterPath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/ParseAndCountConnLog$$anonfun$extractValue$1$$anonfun$apply$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/ParseAndCountConnLog$$anonfun$extractValue$1.class" afterPath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/ParseAndCountConnLog$$anonfun$extractValue$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/ParseAndCountConnLog$$anonfun$parseAndCount$1$$anonfun$4.class" afterPath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/ParseAndCountConnLog$$anonfun$parseAndCount$1$$anonfun$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/ParseAndCountConnLog$$anonfun$parseAndCount$1$$anonfun$apply$1.class" afterPath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/ParseAndCountConnLog$$anonfun$parseAndCount$1$$anonfun$apply$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/ParseAndCountConnLog$$anonfun$parseAndCount$1.class" afterPath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/ParseAndCountConnLog$$anonfun$parseAndCount$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/ParseAndCountConnLog$$anonfun$parseAndCount$2.class" afterPath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/ParseAndCountConnLog$$anonfun$parseAndCount$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/ParseAndCountConnLog$$anonfun$skipEmptyWordCount$1$$anonfun$apply$6.class" afterPath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/ParseAndCountConnLog$$anonfun$skipEmptyWordCount$1$$anonfun$apply$6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/ParseAndCountConnLog$$anonfun$skipEmptyWordCount$1.class" afterPath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/ParseAndCountConnLog$$anonfun$skipEmptyWordCount$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/ParseAndCountConnLog$$anonfun$toLowerCase$1$$anonfun$apply$2.class" afterPath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/ParseAndCountConnLog$$anonfun$toLowerCase$1$$anonfun$apply$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/ParseAndCountConnLog$$anonfun$toLowerCase$1.class" afterPath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/ParseAndCountConnLog$$anonfun$toLowerCase$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/ParseAndCountConnLog$$anonfun$toWouldCountObject$1$$anonfun$apply$5.class" afterPath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/ParseAndCountConnLog$$anonfun$toWouldCountObject$1$$anonfun$apply$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/ParseAndCountConnLog$$anonfun$toWouldCountObject$1.class" afterPath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/ParseAndCountConnLog$$anonfun$toWouldCountObject$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/ParseAndCountConnLog$$typecreator1$1.class" afterPath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/ParseAndCountConnLog$$typecreator1$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/ParseAndCountConnLog$$typecreator2$1.class" afterPath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/ParseAndCountConnLog$$typecreator2$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/ParseAndCountConnLog$.class" afterPath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/ParseAndCountConnLog$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/ParseAndCountConnLog.class" afterPath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/ParseAndCountConnLog.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/StatusCount$.class" afterPath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/StatusCount$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/StatusCount.class" afterPath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/StatusCount.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/SynchronizedMapAccumulator$$anon$2.class" afterPath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/SynchronizedMapAccumulator$$anon$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/SynchronizedMapAccumulator.class" afterPath="$PROJECT_DIR$/target/classes/streaming_jobs/conn_jobs/SynchronizedMapAccumulator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/util/AtomicPattern$.class" afterPath="$PROJECT_DIR$/target/classes/util/AtomicPattern$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/util/RadiusObjectPatternBuilder.class" afterPath="$PROJECT_DIR$/target/classes/util/RadiusObjectPatternBuilder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/util/SparkCommon$.class" afterPath="$PROJECT_DIR$/target/classes/util/SparkCommon$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/parser/ConnParserTest$.class" afterPath="$PROJECT_DIR$/target/test-classes/parser/ConnParserTest$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/parser/LoadLogParserTest$.class" afterPath="$PROJECT_DIR$/target/test-classes/parser/LoadLogParserTest$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/parser/LogObject$.class" afterPath="$PROJECT_DIR$/target/test-classes/parser/LogObject$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/parser/LogObject.class" afterPath="$PROJECT_DIR$/target/test-classes/parser/LogObject.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/parser/PrefilterTest$.class" afterPath="$PROJECT_DIR$/target/test-classes/parser/PrefilterTest$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/parser/RegextTest$.class" afterPath="$PROJECT_DIR$/target/test-classes/parser/RegextTest$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/BicycleDataProducer$$anonfun$1.class" afterPath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/BicycleDataProducer$$anonfun$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/BicycleDataProducer$$anonfun$10.class" afterPath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/BicycleDataProducer$$anonfun$10.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/BicycleDataProducer$$anonfun$11.class" afterPath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/BicycleDataProducer$$anonfun$11.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/BicycleDataProducer$$anonfun$12.class" afterPath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/BicycleDataProducer$$anonfun$12.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/BicycleDataProducer$$anonfun$2.class" afterPath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/BicycleDataProducer$$anonfun$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/BicycleDataProducer$$anonfun$3.class" afterPath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/BicycleDataProducer$$anonfun$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/BicycleDataProducer$$anonfun$4.class" afterPath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/BicycleDataProducer$$anonfun$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/BicycleDataProducer$$anonfun$5.class" afterPath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/BicycleDataProducer$$anonfun$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/BicycleDataProducer$$anonfun$6.class" afterPath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/BicycleDataProducer$$anonfun$6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/BicycleDataProducer$$anonfun$7.class" afterPath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/BicycleDataProducer$$anonfun$7.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/BicycleDataProducer$$anonfun$8.class" afterPath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/BicycleDataProducer$$anonfun$8.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/BicycleDataProducer$$anonfun$9.class" afterPath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/BicycleDataProducer$$anonfun$9.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/BicycleDataProducer$$anonfun$main$1$$anonfun$apply$mcV$sp$1.class" afterPath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/BicycleDataProducer$$anonfun$main$1$$anonfun$apply$mcV$sp$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/BicycleDataProducer$$anonfun$main$1.class" afterPath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/BicycleDataProducer$$anonfun$main$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/BicycleDataProducer$.class" afterPath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/BicycleDataProducer$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/BicycleDataProducer.class" afterPath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/BicycleDataProducer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/BicycleStreamingConsumer$$anonfun$1.class" afterPath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/BicycleStreamingConsumer$$anonfun$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/BicycleStreamingConsumer$$anonfun$2.class" afterPath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/BicycleStreamingConsumer$$anonfun$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/BicycleStreamingConsumer$$anonfun$3.class" afterPath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/BicycleStreamingConsumer$$anonfun$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/BicycleStreamingConsumer$$anonfun$4.class" afterPath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/BicycleStreamingConsumer$$anonfun$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/BicycleStreamingConsumer$$anonfun$5.class" afterPath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/BicycleStreamingConsumer$$anonfun$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/BicycleStreamingConsumer$$anonfun$6.class" afterPath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/BicycleStreamingConsumer$$anonfun$6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/BicycleStreamingConsumer$$anonfun$7.class" afterPath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/BicycleStreamingConsumer$$anonfun$7.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/BicycleStreamingConsumer$$anonfun$8.class" afterPath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/BicycleStreamingConsumer$$anonfun$8.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/BicycleStreamingConsumer$$anonfun$main$1.class" afterPath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/BicycleStreamingConsumer$$anonfun$main$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/BicycleStreamingConsumer$$anonfun$main$2.class" afterPath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/BicycleStreamingConsumer$$anonfun$main$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/BicycleStreamingConsumer$$anonfun$main$3$$anonfun$9.class" afterPath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/BicycleStreamingConsumer$$anonfun$main$3$$anonfun$9.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/BicycleStreamingConsumer$$anonfun$main$3.class" afterPath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/BicycleStreamingConsumer$$anonfun$main$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/BicycleStreamingConsumer$.class" afterPath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/BicycleStreamingConsumer$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/BicycleStreamingConsumer$BikeAggreagation$.class" afterPath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/BicycleStreamingConsumer$BikeAggreagation$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/BicycleStreamingConsumer$BikeAggreagation.class" afterPath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/BicycleStreamingConsumer$BikeAggreagation.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/BicycleStreamingConsumer.class" afterPath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/BicycleStreamingConsumer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/KafkaSparkStreamExample.class" afterPath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/KafkaSparkStreamExample.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/RadiusProducerTest$$anonfun$1.class" afterPath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/RadiusProducerTest$$anonfun$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/RadiusProducerTest$$anonfun$10.class" afterPath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/RadiusProducerTest$$anonfun$10.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/RadiusProducerTest$$anonfun$11.class" afterPath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/RadiusProducerTest$$anonfun$11.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/RadiusProducerTest$$anonfun$12.class" afterPath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/RadiusProducerTest$$anonfun$12.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/RadiusProducerTest$$anonfun$2.class" afterPath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/RadiusProducerTest$$anonfun$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/RadiusProducerTest$$anonfun$3.class" afterPath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/RadiusProducerTest$$anonfun$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/RadiusProducerTest$$anonfun$4.class" afterPath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/RadiusProducerTest$$anonfun$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/RadiusProducerTest$$anonfun$5.class" afterPath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/RadiusProducerTest$$anonfun$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/RadiusProducerTest$$anonfun$6.class" afterPath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/RadiusProducerTest$$anonfun$6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/RadiusProducerTest$$anonfun$7.class" afterPath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/RadiusProducerTest$$anonfun$7.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/RadiusProducerTest$$anonfun$8.class" afterPath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/RadiusProducerTest$$anonfun$8.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/RadiusProducerTest$$anonfun$9.class" afterPath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/RadiusProducerTest$$anonfun$9.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/RadiusProducerTest$$anonfun$main$1$$anonfun$apply$mcV$sp$1.class" afterPath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/RadiusProducerTest$$anonfun$main$1$$anonfun$apply$mcV$sp$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/RadiusProducerTest$$anonfun$main$1.class" afterPath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/RadiusProducerTest$$anonfun$main$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/RadiusProducerTest$.class" afterPath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/RadiusProducerTest$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/RadiusProducerTest.class" afterPath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/RadiusProducerTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/SparkCommon$.class" afterPath="$PROJECT_DIR$/target/test-classes/spark_kafka_connector_scala_test/SparkCommon$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/storage/es/ESTest$$anonfun$1.class" afterPath="$PROJECT_DIR$/target/test-classes/storage/es/ESTest$$anonfun$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/storage/es/ESTest$$anonfun$2.class" afterPath="$PROJECT_DIR$/target/test-classes/storage/es/ESTest$$anonfun$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/storage/es/ESTest$$anonfun$3.class" afterPath="$PROJECT_DIR$/target/test-classes/storage/es/ESTest$$anonfun$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/storage/es/ESTest$$anonfun$4$$anonfun$apply$1.class" afterPath="$PROJECT_DIR$/target/test-classes/storage/es/ESTest$$anonfun$4$$anonfun$apply$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/storage/es/ESTest$$anonfun$4.class" afterPath="$PROJECT_DIR$/target/test-classes/storage/es/ESTest$$anonfun$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/storage/es/ESTest$$anonfun$5$$anonfun$apply$2.class" afterPath="$PROJECT_DIR$/target/test-classes/storage/es/ESTest$$anonfun$5$$anonfun$apply$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/storage/es/ESTest$$anonfun$5.class" afterPath="$PROJECT_DIR$/target/test-classes/storage/es/ESTest$$anonfun$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/storage/es/ESTest$$anonfun$6$$anonfun$apply$3.class" afterPath="$PROJECT_DIR$/target/test-classes/storage/es/ESTest$$anonfun$6$$anonfun$apply$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/storage/es/ESTest$$anonfun$6.class" afterPath="$PROJECT_DIR$/target/test-classes/storage/es/ESTest$$anonfun$6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/storage/es/ESTest$$anonfun$7$$anonfun$apply$4$$anonfun$apply$5.class" afterPath="$PROJECT_DIR$/target/test-classes/storage/es/ESTest$$anonfun$7$$anonfun$apply$4$$anonfun$apply$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/storage/es/ESTest$$anonfun$7$$anonfun$apply$4.class" afterPath="$PROJECT_DIR$/target/test-classes/storage/es/ESTest$$anonfun$7$$anonfun$apply$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/storage/es/ESTest$$anonfun$7.class" afterPath="$PROJECT_DIR$/target/test-classes/storage/es/ESTest$$anonfun$7.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/storage/es/ESTest$$anonfun$8.class" afterPath="$PROJECT_DIR$/target/test-classes/storage/es/ESTest$$anonfun$8.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/storage/es/ESTest$$anonfun$main$1.class" afterPath="$PROJECT_DIR$/target/test-classes/storage/es/ESTest$$anonfun$main$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/storage/es/ESTest$.class" afterPath="$PROJECT_DIR$/target/test-classes/storage/es/ESTest$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/storage/es/ESTest.class" afterPath="$PROJECT_DIR$/target/test-classes/storage/es/ESTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/storage/redis/RedisJobConfig$.class" afterPath="$PROJECT_DIR$/target/test-classes/storage/redis/RedisJobConfig$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/storage/redis/RedisJobConfig.class" afterPath="$PROJECT_DIR$/target/test-classes/storage/redis/RedisJobConfig.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/storage/redis/RedisStreamingTest2$$anonfun$start$1$$anonfun$1$$anonfun$apply$1.class" afterPath="$PROJECT_DIR$/target/test-classes/storage/redis/RedisStreamingTest2$$anonfun$start$1$$anonfun$1$$anonfun$apply$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/storage/redis/RedisStreamingTest2$$anonfun$start$1$$anonfun$1.class" afterPath="$PROJECT_DIR$/target/test-classes/storage/redis/RedisStreamingTest2$$anonfun$start$1$$anonfun$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/storage/redis/RedisStreamingTest2$$anonfun$start$1.class" afterPath="$PROJECT_DIR$/target/test-classes/storage/redis/RedisStreamingTest2$$anonfun$start$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/storage/redis/RedisStreamingTest2$.class" afterPath="$PROJECT_DIR$/target/test-classes/storage/redis/RedisStreamingTest2$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/storage/redis/RedisStreamingTest2.class" afterPath="$PROJECT_DIR$/target/test-classes/storage/redis/RedisStreamingTest2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/storage/redis/StreamToRedisTest$$anonfun$1.class" afterPath="$PROJECT_DIR$/target/test-classes/storage/redis/StreamToRedisTest$$anonfun$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/storage/redis/StreamToRedisTest$$anonfun$main$1.class" afterPath="$PROJECT_DIR$/target/test-classes/storage/redis/StreamToRedisTest$$anonfun$main$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/storage/redis/StreamToRedisTest$.class" afterPath="$PROJECT_DIR$/target/test-classes/storage/redis/StreamToRedisTest$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/storage/redis/StreamToRedisTest.class" afterPath="$PROJECT_DIR$/target/test-classes/storage/redis/StreamToRedisTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/streaming/AccumulatorTest$$anonfun$main$1$$anonfun$apply$1.class" afterPath="$PROJECT_DIR$/target/test-classes/streaming/AccumulatorTest$$anonfun$main$1$$anonfun$apply$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/streaming/AccumulatorTest$$anonfun$main$1.class" afterPath="$PROJECT_DIR$/target/test-classes/streaming/AccumulatorTest$$anonfun$main$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/streaming/AccumulatorTest$.class" afterPath="$PROJECT_DIR$/target/test-classes/streaming/AccumulatorTest$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/streaming/AccumulatorTest.class" afterPath="$PROJECT_DIR$/target/test-classes/streaming/AccumulatorTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../kafka-guide/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.rse.core.prefs" afterPath="$PROJECT_DIR$/../kafka-guide/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.rse.core.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../kafka-guide/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.ide.prefs" afterPath="$PROJECT_DIR$/../kafka-guide/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.ide.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../kafka-guide/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" afterPath="$PROJECT_DIR$/../kafka-guide/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../kafka-guide/.metadata/.plugins/org.eclipse.pde.core/.cache/clean-cache.properties" afterPath="$PROJECT_DIR$/../kafka-guide/.metadata/.plugins/org.eclipse.pde.core/.cache/clean-cache.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../kafka-guide/.metadata/version.ini" afterPath="$PROJECT_DIR$/../kafka-guide/.metadata/version.ini" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../kafka-guide/README.md" afterPath="$PROJECT_DIR$/../kafka-guide/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../kafka-guide/src/SimpleConsumer.java" afterPath="$PROJECT_DIR$/../kafka-guide/src/SimpleConsumer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../kafka-guide/src/SimpleProducer.java" afterPath="$PROJECT_DIR$/../kafka-guide/src/SimpleProducer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../kafka-guide/src/configurations/Constants.java" afterPath="$PROJECT_DIR$/../kafka-guide/src/configurations/Constants.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../kafka-guide/src/start_zookeeper_then_kafka.sh" afterPath="$PROJECT_DIR$/../kafka-guide/src/start_zookeeper_then_kafka.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paytv-spark-kafka-connector.iml" afterPath="$PROJECT_DIR$/paytv-spark-kafka-connector.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/com/hungsiro/spark_kafka/core/sinks/RDDKafkaWriter.scala" afterPath="$PROJECT_DIR$/src/main/scala/com/hungsiro/spark_kafka/core/sinks/RDDKafkaWriter.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/streaming_jobs/conn_jobs/ConnJobConfig.scala" afterPath="$PROJECT_DIR$/src/main/scala/streaming_jobs/conn_jobs/ConnJobConfig.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/streaming_jobs/conn_jobs/MapAccumulator.scala" afterPath="$PROJECT_DIR$/src/main/scala/streaming_jobs/conn_jobs/MapAccumulator.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/streaming_jobs/conn_jobs/ParseAndCountConnLog.scala" afterPath="$PROJECT_DIR$/src/main/scala/streaming_jobs/conn_jobs/ParseAndCountConnLog.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/scala/counting/ApproximateCountDistinSparkSQL.scala" afterPath="$PROJECT_DIR$/src/test/scala/counting/ApproximateCountDistinSparkSQL.scala" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -383,9 +41,11 @@
       <file leaf-file-name="ConnJob.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/streaming_jobs/conn_jobs/ConnJob.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-137">
+            <state relative-caret-position="105">
               <caret line="13" column="6" lean-forward="false" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
-              <folding />
+              <folding>
+                <element signature="e#34#78#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -393,7 +53,7 @@
       <file leaf-file-name="prefilterConfig.conf" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/prefilterConfig.conf">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
+            <state relative-caret-position="645">
               <caret line="43" column="88" lean-forward="false" selection-start-line="43" selection-start-column="88" selection-end-line="43" selection-end-column="88" />
               <folding />
             </state>
@@ -403,23 +63,19 @@
       <file leaf-file-name="SQLTranformerWithJoin.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/scala/counting/SQLTranformerWithJoin.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
+            <state relative-caret-position="105">
               <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="24" selection-end-column="3" />
-              <folding>
-                <element signature="e#17#66#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ApproximateCountDistinSparkSQL.scala" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ApproximateCountDistinSparkSQL.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/scala/counting/ApproximateCountDistinSparkSQL.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-              <folding>
-                <element signature="e#18#67#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="345">
+              <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -427,18 +83,52 @@
       <file leaf-file-name="WordCountJob.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/example/WordCountJob.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="126" column="13" lean-forward="false" selection-start-line="126" selection-start-column="13" selection-end-line="126" selection-end-column="13" />
+            <state relative-caret-position="222">
+              <caret line="112" column="50" lean-forward="true" selection-start-line="112" selection-start-column="50" selection-end-line="112" selection-end-column="50" />
+              <folding>
+                <element signature="e#5582#5632#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AccumulatorTest.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/scala/streaming/AccumulatorTest.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="7" lean-forward="false" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+              <folding>
+                <element signature="e#18#58#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="KafkaSparkStreamExample.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/spark_kafka_connector_scala_test/KafkaSparkStreamExample.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="12" column="7" lean-forward="false" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ConnLogLineObject.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/parser/ConnLogLineObject.scala">
+      <file leaf-file-name="BicycleStreamingConsumer.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/spark_kafka_connector_scala_test/BicycleStreamingConsumer.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="30" lean-forward="false" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="30" />
+            <state relative-caret-position="240">
+              <caret line="32" column="23" lean-forward="false" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="525">
+              <caret line="35" column="5" lean-forward="true" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -447,38 +137,8 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="35" lean-forward="false" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ConnLogParser.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/parser/ConnLogParser.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="35" column="7" lean-forward="false" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoadLogLineObject.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/parser/LoadLogLineObject.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="24" column="11" lean-forward="false" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ConnParserTest.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/parser/ConnParserTest.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="92" lean-forward="false" selection-start-line="10" selection-start-column="82" selection-end-line="10" selection-end-column="92" />
+            <state relative-caret-position="824">
+              <caret line="216" column="19" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="216" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -586,9 +246,9 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="65" />
-    <option name="y" value="-4" />
+    <option name="y" value="24" />
     <option name="width" value="1855" />
-    <option name="height" value="1084" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -608,7 +268,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -858,6 +517,36 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="example" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WordCountJob.scala" />
+              <option name="myItemType" value="org.jetbrains.plugins.scala.components.ScalaDefsProjectViewProvider$ScalaFileTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="paytv-spark-kafka-connector" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="paytv-spark-kafka-connector" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="core" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -883,6 +572,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1254,34 +944,42 @@
       <option name="presentableId" value="Default" />
       <updated>1488191236464</updated>
     </task>
+    <task id="LOCAL-00001" summary="add Approximate counting">
+      <created>1492699900765</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1492699900765</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
+    <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29272237" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43119267" sideWeight="0.44366577" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3537207" sideWeight="0.23504043" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32988048" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38939857" sideWeight="0.7649596" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29272237" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4424057" sideWeight="0.49811321" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5606524" sideWeight="0.49811321" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43119267" sideWeight="0.44366577" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38939857" sideWeight="0.7649596" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991913" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4424057" sideWeight="0.49811321" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5606524" sideWeight="0.49811321" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -1328,6 +1026,8 @@
     <ignored-roots>
       <path value="$USER_HOME$" />
     </ignored-roots>
+    <MESSAGE value="add Approximate counting" />
+    <option name="LAST_COMMIT_MESSAGE" value="add Approximate counting" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1340,13 +1040,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../kafka-guide/src/ConsumerGroup/ConsumerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/spark_kafka_connector_scala_test/BicycleDataProducer.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-345">
@@ -1354,24 +1047,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/spark_kafka_connector_scala_test/KafkaSparkStreamExample.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="12" column="7" lean-forward="false" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/spark_kafka_connector_scala_test/SparkCommon.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="56" lean-forward="false" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/spark_kafka_connector_scala_test/BicycleStreamingConsumer.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-210">
-          <caret line="32" column="23" lean-forward="false" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -1519,7 +1198,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1535,7 +1213,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="12" column="6" lean-forward="false" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1543,7 +1220,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="37" column="1" lean-forward="false" selection-start-line="37" selection-start-column="1" selection-end-line="37" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1569,7 +1245,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="12" column="15" lean-forward="false" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1577,7 +1252,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="11" column="6" lean-forward="false" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1593,7 +1267,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1601,15 +1274,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="552">
           <caret line="356" column="18" lean-forward="true" selection-start-line="356" selection-start-column="6" selection-end-line="356" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/streaming/AccumulatorTest.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="33" lean-forward="false" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1617,7 +1281,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-660">
           <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1633,7 +1296,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="77" lean-forward="false" selection-start-line="8" selection-start-column="67" selection-end-line="8" selection-end-column="77" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1647,7 +1309,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/parser/LoadLogLineObject.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
+        <state relative-caret-position="360">
           <caret line="24" column="11" lean-forward="false" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="11" />
           <folding />
         </state>
@@ -1657,7 +1319,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
           <caret line="35" column="7" lean-forward="false" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
-          <folding />
+          <folding>
+            <element signature="e#16#41#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1679,53 +1343,87 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/streaming_jobs/conn_jobs/ConnJob.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-137">
+        <state relative-caret-position="105">
           <caret line="13" column="6" lean-forward="false" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
-          <folding />
+          <folding>
+            <element signature="e#34#78#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/prefilterConfig.conf">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
+        <state relative-caret-position="645">
           <caret line="43" column="88" lean-forward="false" selection-start-line="43" selection-start-column="88" selection-end-line="43" selection-end-column="88" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/example/WordCountJob.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="126" column="13" lean-forward="false" selection-start-line="126" selection-start-column="13" selection-end-line="126" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="35" lean-forward="false" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/scala/counting/SQLTranformerWithJoin.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
+        <state relative-caret-position="105">
           <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="24" selection-end-column="3" />
-          <folding>
-            <element signature="e#17#66#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/scala/counting/ApproximateCountDistinSparkSQL.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        <state relative-caret-position="345">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="824">
+          <caret line="216" column="19" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="216" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/example/WordCountJob.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="112" column="50" lean-forward="true" selection-start-line="112" selection-start-column="50" selection-end-line="112" selection-end-column="50" />
           <folding>
-            <element signature="e#18#67#0" expanded="true" />
+            <element signature="e#5582#5632#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/streaming/AccumulatorTest.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="7" lean-forward="false" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+          <folding>
+            <element signature="e#18#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/spark_kafka_connector_scala_test/KafkaSparkStreamExample.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="12" column="7" lean-forward="false" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/spark_kafka_connector_scala_test/BicycleStreamingConsumer.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="32" column="23" lean-forward="false" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" column="5" lean-forward="true" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
